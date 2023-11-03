@@ -1,0 +1,762 @@
+@media screen and (max-width:1600px){
+  /* Header */
+  .hd-gnb-list {gap: 0 30px;}
+
+  /* Main */
+  .main-visual-slider .swiper-slide {height: 700px;}
+  .contents_dom_eng .main-visual-slider .swiper-slide {height: 600px;}
+  .main-visual-txt {font-size: 54px;}
+
+  #main-notice .wrapper {overflow: hidden; padding: 0 30px;}
+
+  .main-qkmenu-list {gap: 30px;}
+
+  /* Sub */
+  
+  /* 사업안내 > 사업개요 */
+  .ov_cir_wrap {gap: 0 70px;}
+  .ov_cir-big {width: 150px; height: 150px;}
+  .ov_cir-big:after {right: -45px;}
+  .ov_cir-small {width: 130px; height: 130px;}
+  .ov_cir-small:before {left: -63px; width: 59px;}
+  .ov_cir-small:after {right: -45px; width: 41px;}
+
+  .ov_budget-total {height: 60px; line-height: 60px;}
+  .ov_budget-total strong {font-size: 26px;}
+  .ov_budget-cir.cir1 {width: 230px; height: 230px;}
+  .ov_budget-cir.cir2 {width: 180px; height: 180px;}
+  .ov_budget-cir.cir3 {width: 165px; height: 165px;}
+  .ov_budget-cir.cir4 {width: 115px; height: 115px;}
+  .ov_budget-cir.cir5 {width: 110px; height: 110px;}
+  .ov_budget-cir.cir2:after {width: 73px;}
+  .ov_budget-cir.cir3:after {width: 80px; left: -80px;}
+  .ov_budget-cir.cir4:after {width: 77px;}
+  .ov_budget-cir.cir5:after {width: 58px; left: -37px;}
+  .ov_budget-cir .t2 {font-size: 26px;}
+  .ov_budget-cir.cir4 .t2 {font-size: 22px;}
+  .ov_budget-cir.cir5 .t2 {font-size: 20px;}
+
+  .introduction .smr_adv {padding: 95px 30px 30px;}
+  .introduction .smr_adv_summary {padding: 90px 30px 30px;}
+
+  /* 사업단 소개 > 인사말 */
+  .greeting_in-1 .sub_in_ct {background-position: bottom -60px right -50px;}
+  .greeting_txt_wrap2 .t1 br {display: none;}
+
+  /* 사업단 소개 > 설립목적 */
+  .setup_purpose_bn .t1 br {display: none;}
+
+  /* 사업단 소개 > 조직도 */
+  .organ_dp2 > li > .organ_cn {width: 180px;}
+  .organ_dp3 > li > .organ_cn {width: 180px;}
+
+  /* 사업단 소개 > CI소개 */
+  .ci_intro .lt .download-btn {width: 180px; padding-left: 15px; background-position: center right 15px;}
+
+  /* i-SMR > SMR개요 */
+  .smr_adv {padding: 70px 30px 30px;}
+  .smr_adv_summary {padding: 50px 20px 20px}
+  .smr_adv_summary .t1 {top: -40px; width: 80px; height: 80px; margin-left: -40px; font-size: 18px;}
+  .smr_adv_detail .t1 {font-size: 18px;}
+  .smr_adv_detail .t1 span {margin-top: -4px;}
+  .smr_adv_detail_wrap {padding: 20px 20px;}
+  .smr_adv_detail_in {padding: 15px;}
+  .smr_adv_detail_in .in_ct_li .in_lt {padding-left: 10px;}
+  .smr_adv_detail_in .in_top-t1 {font-size: 16px;}
+  .smr_adv_detail_in .in_ct-t1 {font-size: 14px;}
+  .smr_adv_detail_in .in_ct-t2 {font-size: 16px;}
+  .smr_adv_detail-cf {font-size: 18px;}
+
+  .smr_worldmap {background-size: contain;}
+
+  /* i-SMR > 혁신설계 및 기술 */
+  .innov_tech_in .t1 {font-size: 20px;}
+}
+
+@media screen and (max-width:1290px){
+  /* Common */
+  .container {padding-left: 50px; padding-right: 50px;}
+
+  .board-card-body .subject {font-size: 16px;}
+  .board-card-body .content {font-size: 14px;}
+
+  /* Header */
+  .hd-logo img {width: 230px;}
+  .hd-gnb-item > a {font-size: 16px;}
+  .hd-gnb-list {gap: 0 20px;}
+  .hd-util-smr {font-size: 14px; line-height: 35px;}
+  .hd-util-lang {font-size: 14px; line-height: 35px;}
+
+  .sub-nav .sub-nav-depth1 {padding: 20px 0 20px 30px;}
+  .sub-nav .sub-nav-depth1:first-child {padding-left: 30px;}
+  .sub-nav .depth1-name {font-size: 18px;}
+  .sub-nav .depth1-name:before {top: 8px; left: -13px; width: 10px;}
+  .sub-nav .sub-nav-depth2 {margin-top: 10px;}
+  .sub-nav .depth2-name .text {font-size: 16px;}
+
+  /* Main */
+  .main-scroll {display: none;}
+  .main-nav-list {display: none;}
+
+  #main-visual .container {padding-left: 0; padding-right: 0;}
+  .main-visual-slider {width: 100% !important; border-radius: 0 !important;}
+  .main-visual-txt {font-size: 48px;}
+
+  #main-notice {padding-bottom: 50px;}
+  #main-notice .wrapper {padding: 0;}
+
+  .main-qkmenu-icon {width: 100px; height: 100px; line-height: 100px;}
+  .main-qkmenu-text {margin-top: 10px; font-size: 16px;}
+
+  .main-media-more {width: 160px; height: 40px; line-height: 40px; padding-left: 15px; font-size: 14px;}
+
+  /* Sub */
+  .sb_top_ct {height: 300px;}
+  .sb_top .sb_title2 {font-size: 50px;}
+
+  .sb_loca .sb_2menus_wrap > li > a {font-size: 18px;}
+
+  .sub_contents {margin-top: 100px;}
+  .sub_title {font-size: 26px;}
+  .sub_title:after {top: 15px;}
+  .sub_title2 {font-size: 20px;}
+  
+  /* 사업안내 > 사업개요 */
+  .ov_cir_wrap {gap: 0 20px;}
+  .ov_cir-big {width: 120px; height: 120px;}
+  .ov_cir-big:after {right: -17px;}
+  .ov_cir-big.act:before {left: -26px;}
+  .ov_cir-small {width: 100px; height: 100px;}
+  .ov_cir-small:before {left: -30px; width: 26px;}
+  .ov_cir-small:after {right: -18px; width: 14px;}
+  .ov_cir-big.act .ov_cir-small .t1 {font-size: 20px;}
+  .ov_cir-small .t1 {font-size: 16px;}
+  .ov_cir-small .t2 {font-size: 14px;}
+
+  .introduction .smr_adv_summary_wrap > ul > li {width: 100% !important; height: auto !important;}
+
+  .ov_budget-cir:after {display: none !important;}
+
+  .ov_pdf_body {padding: 30px;}
+  .ov_pdf_link {padding: 13px 40px 13px 15px; background-position: center right 15px;}
+  .ov_pdf_link:hover {background-position: center right 15px;}
+
+  /* 사업단 소개 > 인사말 */
+  .greeting_in-1 .sub_in_ct {background-position: bottom 0 right -50px; background-size: 450px auto;}
+  .greeting_bn .t1 {font-size: 42px;}
+
+  /* 사업단 소개 > 설립목적 */
+  .setup_purpose_bn {padding: 50px 0;}
+  .setup_purpose_bn .t1 {font-size: 20px;}
+
+  .setup_mission .box .num {font-size: 16px;}
+  .setup_mission .box .t1 {font-size: 18px;}
+  .setup_mission .box .t1 br {display: none;}
+
+  /* 사업단 소개 > 조직도 */
+  .organ_dp1 > li > .organ_cn {width: 140px;}
+  .organ_dp1 > li > .organ_cn img {width: 25px;}
+  .organ_dp1 > li > .organ_cn .t1 {font-size: 18px;}
+  .organ_dp2 > li > .organ_cn {width: 120px;}
+  .organ_dp2 > li > .organ_cn .t1 {font-size: 16px;}
+  .organ_dp3 > li > .organ_cn {width: 120px;}
+  .organ_dp3 > li > .organ_cn .t1 {font-size: 16px;}
+
+  /* 사업단 소개 > CI소개 */
+  .ci_intro .lt .expl1 {font-size: 16px;}
+  .ci_intro .lt .expl2 {font-size: 14px;}
+  .ci_intro .lt .download-btn {width: 152px; padding-left: 10px; font-size: 14px; background-position: center right 10px; background-size: 14px auto;}
+  .ci_intro .rt {padding-left: 50px;}
+
+  .ci_lay .box .tct {padding-left: 20px; padding-right: 20px;}
+
+  .ci-signature {margin: 10px -5px 0;}
+  .ci-signature .box {padding: 0 5px;}
+
+  .ci-type {margin: 10px -5px 0;}
+  .ci-type .box {padding: 0 5px;}
+
+  .ci-emblem {margin: 10px -5px 0;}
+  .ci-emblem .box {padding: 0 5px;}
+
+  .ci_main_color_wrap {padding: 30px 20px;}
+  .ci_main_color_list {margin: -10px;}
+  .ci_main_color_list > li {padding: 10px;}
+  .ci_main_color_list .color-expl {font-size: 12px;}
+  .ci_sub_color_wrap {padding: 30px 20px;}
+  .ci_sub_color_list > li:not(:first-child) {margin-left: 50px;}
+  .ci_sub_color_list .color_expl {padding-left: 10px; font-size: 12px;}
+
+  /* i-SMR > SMR개요 */
+  .numtxt_in {padding: 20px;}
+  .numtxt_in .num {font-size: 16px;}
+  .numtxt_in .t1 {font-size: 20px;}
+  .numtxt_in .t2 {margin-top: 10px; padding-top: 10px;}
+
+  .smr_img_box1 .smr_img_in {padding: 30px;}
+
+  .smr_adv_detail_in .in_ct_li .in_lt {width: calc(100% - 60px);}
+  .smr_adv_detail_in .in_ct_li .in_rt {width: 60px;}
+
+  .smr_worldmap_li {width: 135px;}
+  .smr_worldmap_li.argentina, 
+  .smr_worldmap_li.uk,
+  .smr_worldmap_li.italy,
+  .smr_worldmap_li.france {left: 175px;}
+  .smr_worldmap_li.korea,
+  .smr_worldmap_li.japan {right: 175px;}
+  .smr_worldmap_li.south_africa,
+  .smr_worldmap_li.china {right: 320px;}
+  .smr_worldmap_li.india {right: 465px;}
+
+  /* i-SMR > 혁신설계 및 기술 */
+  .innov_design-lt {width: 50%;}
+  .innov_design-rt {width: 50%;}
+  .innov_design-img img {width: 90%;}
+
+  .innov_tech_in {padding: 20px;}
+  .innov_tech_in .t1 {font-size: 18px;}
+  .innov_tech_in .t2 {margin-top: 10px; padding-top: 10px;}
+  .innov_tech_in .icon img {width: auto; max-width: none; height: 36px;}
+
+  /* 게시판 공통 */
+  .bo_sch_wrap {width: 500px !important;}
+  #bo_cate ul {margin: -5px -10px !important;}
+  #bo_cate li {padding: 5px 10px !important;}
+  #bo_cate a {font-size: 16px !important;}
+}
+
+@media screen and (max-width:1023px){
+  /* Common */
+  .container {padding-left: 30px; padding-right: 30px;}
+
+  .board-card-head {padding: 15px;}
+  .board-card-head .category {font-size: 14px;}
+  .board-card-head .date {font-size: 14px;}
+  .board-card-head .date i {margin: 0 2px 0 0;}
+  .board-card-body {padding: 0 15px;}
+  .board-card-inner {padding: 15px 0;}
+
+  /* Header */
+  .hd-gnb {display: none !important;}
+  .hd-util {display: none !important;}
+  #mobile_menu .hd-util {display: flex !important; float: none; padding: 20px 0; justify-content: center;}
+  #header .mobile_menu-btn {display: block;}
+
+  /* Main */
+  .main-visual-slider .swiper-slide {height: 650px;}
+  .contents_dom_eng .main-visual-slider .swiper-slide {height: 580px;}
+  .main-visual-ct {padding: 0 30px;}
+  .main-visual-txt {font-size: 40px;}
+
+  #main-notice {padding-bottom: 78px;}
+
+  .main-qkmenu-icon {width: 70px; height: 70px; line-height: 70px; margin: 0 auto;}
+  .main-qkmenu-icon-1 {background-size:  40px auto;}
+  .main-qkmenu-icon-2 {background-size:  40px auto;}
+  .main-qkmenu-icon-3 {background-size:  25px auto;}
+  .main-qkmenu-icon-4 {background-size:  35px auto;}
+  .main-qkmenu-icon-5 {background-size:  40px auto;}
+  .main-qkmenu-icon-6 {background-size:  30px auto;}
+  .main-qkmenu-icon-7 {background-size:  30px auto;}
+
+  #main-media {padding: 70px 0 120px;}
+  .main-media-top {display: block;}
+  .main-media-top .title {font-size: 38px;}
+  .main-media-top .tab-list {margin-top: 30px; justify-content: flex-start;}
+
+  /* Sub */
+  .sb_top_ct {height: 250px;}
+  .sb_top .sb_title2 {font-size: 40px;}
+
+  .sb_loca .sb_2menus_wrap > li > a {height: 60px; font-size: 16px;}
+
+  .sub_title {font-size: 22px;}
+  .sub_title:after {top: 13px;}
+  .sub_expl2 {font-size: 16px;}
+  
+  /* 사업안내 > 사업개요 */
+  .ov_intro_text {font-size: 26px;}
+
+  .ov_period_wrap {padding: 35px 20px;}
+  .ov_period_year .bar {padding: 0 10px 0 15px;}
+  .ov_period_year .bar-txt {font-size: 14px;}
+  .ov_period_year .bar-txt::before {width: 4px; height: 4px; left: -7px;}
+
+  .introduction .diff_chart_dp1 {padding: 10px;}
+  .introduction .diff_chart_dp1 img {width: auto; height: 100%;}
+  .introduction .diff_chart_dp2 {margin-top: 80px;}
+
+  .introduction .in_t3_tit {font-size: 16px;}
+  .introduction .in_t3_txt {font-size: 14px;}
+
+  .introduction .overview_in-4 .diff_chart_dp1 {top: -55px;}
+  .introduction .smr_adv_summary {padding: 70px 20px 20px;}
+
+  .ov_budget_wrap {padding: 83px 0 30px;}
+  .ov_budget-total strong {font-size: 22px;}
+  .ov_budget_inner {gap: 10px; padding: 0 20px;}
+  .ov_budget-cir {height: 100px !important; margin: 0 !important; border-radius: 5px;}
+  .ov_budget-cir:before {border-radius: 5px; transform: rotate(0);}
+  .ov_budget-cir.cir1 {width: 100%;}
+  .ov_budget-cir.cir2,
+  .ov_budget-cir.cir3 {width: calc(50% - 5px);}
+  .ov_budget-cir.cir4,
+  .ov_budget-cir.cir5 {width: calc(50% - 5px);}
+  .ov_budget-cir .t1 {font-size: 14px !important;}
+  .ov_budget-cir .t2 {font-size: 20px !important;}
+
+  /* 사업단 소개 > 인사말 */
+  .greeting_in-1 .container {padding: 0 0 0 30px;}
+  .greeting_in-1 .sub_in_ct {height: auto; padding: 80px 0 100px; background-position: bottom 0 right -30px; background-size: 320px auto;}
+  .greeting_bn .t1 {font-size: 30px;}
+
+  .greeting_txt_wrap2 .txt_box:not(:first-child) {margin-top: 20px;}
+  .greeting_txt_wrap1 .t1 {font-size: 22px;}
+  .greeting_txt_wrap2 .t1 {font-size: 16px;}
+  .greeting_txt_wrap3 .t1 {font-size: 16px;}
+  .greeting_txt_wrap3 .sign img {width: 120px;}
+
+  /* 사업단 소개 > 설립목적 */
+  .setup_purpose_bn .t1 {font-size: 18px;}
+
+  .setup_mission .box .in {padding: 30px 20px;}
+  .setup_mission .box .t1 {font-size: 16px;}
+
+  /* 사업단 소개 > 조직도 */
+  .organ_in-1 .sub_in_ct {background-size: 250px auto;}
+  .organ_dp2 > li:not(:first-child) {margin-left: 50px;}
+  .organ_dp2 > li:not(:first-child):before {left: calc((50% + 50px) * -1); width: calc(100% + 50px);}
+  .organ_dp2 > li:not(:first-child):after {left: calc((50% + 50px) * -1); width: calc(100% + 50px);}
+  .organ_dp3 > li:not(:first-child) {margin-left: 50px;}
+  .organ_dp3 > li:not(:first-child):before {left: calc((50% + 50px) * -1); width: calc(100% + 50px);}
+
+  /* 사업단 소개 > CI소개 */
+  .ci_in-2 {padding-top: 50px; margin-top: 50px;}
+  .ci_in-3 {padding: 50px 0;}
+  .ci_in-4 {margin-top: 50px;}
+  .ci_in-5 {margin-top: 50px;}
+
+  .ci_intro {flex-flow: column wrap;}
+  .ci_intro .lt {width: 100%;}
+  .ci_intro .rt {width: 100%; margin-top: 30px; padding-left: 0;}
+  .df_ci_wrap {padding: 40px 0;}
+  .df_ci_img img {width: 250px;}
+
+  .ci-signature .tct img {width: 200px;}
+
+  .ci-type .box {display: block; width: 100%;}
+  .ci-type .box:not(:first-child) {margin-top: 10px;}
+  .ci-type .tct {padding: 30px 0;}
+
+  .ci-emblem {margin: 5px -5px -5px;}
+  .ci-emblem .box {width: 50%; padding: 5px;}
+  .ci-emblem .tct {padding: 20px 0;}
+
+  .ci_main_color_wrap .box-tit {margin-bottom: 10px;}
+  .ci_main_color_list > li {display: block; width: 100%;}
+  .ci_sub_color_list > li:not(:first-child) {margin-left: 30px;}
+
+  /* 사업단 소개 > 오시는 길 */
+  .map_info .t1 .big {font-size: 16px;}
+  .map_info .t1 .sm {font-size: 16px;}
+  .map-btn {top: 25px; width: 160px; height: 40px; line-height: 40px; font-size: 14px;}
+
+  /* i-SMR > SMR개요 */
+  .numtxt_box > ul {margin: -5px;}
+  .numtxt_box > ul > li {padding: 5px;}
+  .numtxt_in {padding: 15px;}
+  .numtxt_in .num {font-size: 14px;}
+  .numtxt_in .t1 {font-size: 16px;}
+  .numtxt_in .t2 {margin-top: 5px; padding-top: 5px; font-size: 14px;}
+
+  .smr_adv_summary .t1 {font-size: 16px;}
+  .smr_adv_summary_in .in_t1 {font-size: 16px;}
+  .smr_adv_summary_in .in_t2 {font-size: 14px;}
+  .smr_adv_summary_in .in_t2 br {display: none;}
+
+  .smr_adv_detail .t1 {font-size: 16px;}
+  .smr_adv_detail .t1 span {height: 20px; line-height: 20px; margin-top: -1px; margin-right: 5px; padding: 0 10px; font-size: 14px;}
+  .smr_adv_detail_wrap > ul > li {display: block; width: 100%;}
+  .smr_adv_detail-cf {font-size: 16px;}
+
+  .smr_worldmap {padding: 50% 20px 20px;}
+  .smr_worldmap_li {position: inherit !important; top: inherit !important; bottom: inherit !important; left: inherit !important; right: inherit !important; width: 100%;}
+  .smr_worldmap_li:not(:first-child) {margin-top: 15px;}
+  .smr_worldmap_li .t1 {font-size: 14px;}
+  .smr_worldmap_dev > li {font-size: 14px;}
+  
+  /* i-SMR > 혁신설계 및 기술 */
+  .ismr_bn .t1 {font-size: 22px;}
+  .ismr_bn-download {width: 150px; height: 40px; line-height: 38px; margin: 30px auto 0; font-size: 14px;}
+  
+  .innov_design-lt {display: block; width: 100%;}
+  .innov_design-rt {display: block; width: 100%; margin-top: 30px; padding-left: 0;}
+  .innov_design-img {min-height: auto; padding: 20px; text-align: center;}
+  .innov_design-img img {position: inherit; top: inherit; left: inherit; transform: inherit; width: 100%;}
+  
+  .contents_dom_eng .innov_design-img {min-height: auto;}
+
+  .innov_tech > ul > li {width: 25%;}
+  .innov_tech_in {padding: 15px;}
+  .innov_tech_in .t1 {font-size: 16px;}
+  .innov_tech_in .t2 {font-size: 14px;}
+  .innov_tech_in .t2 br {display: none;}
+
+  /* i-SMR > 차별성 */
+  .diff_pic > ul {margin: -10px;}
+  .diff_pic > ul > li {padding: 10px;}
+
+  .diff_gr-txt > ul > li {padding: 10px 15px;}
+
+  .diff_chart_dp1 {width: 150px; height: 100px;}
+  .diff_chart_dp1 img {width: 65px;}
+  .diff_chart_dp1:after {bottom: -50px; height: 50px;}
+  .diff_chart_dp2 {gap: 0 50px; margin-top: 80px;}
+  .diff_chart_dp2 .box {max-width: calc(25% - 40px);}
+  .diff_chart_dp2 .box:not(:first-child):before {left: calc((50% + 50px) * -1); width: calc(100% + 50px);}
+  .diff_chart_dp2 .dp2-t1 {padding: 5px 10px; font-size: 14px;}
+  .diff_chart_dp2 .dp2-t2 {font-size: 16px;}
+
+  .diff_in-2 .diff_pic > ul > li:nth-child(1) .diff_pic_in {background-size: 70% auto;}
+  .diff_in-2 .diff_pic > ul > li:nth-child(2) .diff_pic_in {background-size: 90% auto;}
+}
+
+@media screen and (max-width:767px){
+  /* Common */
+  .container {padding-left: 20px; padding-right: 20px;}
+
+  .tab-list {gap: 10px;}
+  .tab-item:after {left: -5px; height: 12px; margin-top: -6px;}
+  .tab-btn {font-size: 14px;}
+
+  .board-card-head .category {font-size: 12px;}
+  .board-card-head .date {font-size: 12px;}
+  .board-card-body .subject {font-size: 14px;}
+  .board-card-body .content {font-size: 12px;}
+
+  /* Header */
+  .hd-logo {height: 60px; line-height: 60px;}
+  .hd-logo img {width: 180px;}
+
+  #mobile_menu {padding-top: 60px;}
+  #mobile_menu .mobile_menu-dep1 > li > a {font-size: 16px;}
+  #mobile_menu .mobile_menu-dep2 > li > a {font-size: 14px;}
+
+  /* Footer */
+  .ft-top-container {padding-top: 8px; padding-bottom: 8px;}
+  .rel-site-navigation {width: 90px;}
+  .rel-site-slider-wrapper {width: calc(100% - 90px);}
+  .rel-site-navigation .swiper-button-arrow {width: 25px;}
+  .rel-site-slide {height: 40px; padding: 7px;}
+
+  .ft-bt-container {padding-top: 25px; padding-bottom: 20px;}
+  .ft-lt {float: none;}
+  .ft-rt {float: none;}
+  .ft-addr {margin: 20px 0 5px; font-size: 14px; line-height: 1.3;}
+  .ft-copy {font-size: 13px; line-height: 1.3;}
+  .fnb {margin-top: 20px;}
+  .fnb-btn {font-size: 14px;}
+
+  /* Main */
+  #main-visual {padding-top: 60px;}
+  .main-visual-slider .swiper-slide {height: 500px;}
+  .contents_dom_eng .main-visual-slider .swiper-slide {height: 400px;}
+  .main-visual-ct {margin-top: 120px; padding: 0 20px;}
+  .main-visual-txt {font-size: 26px;}
+  .main-visual-txt br {display: none;}
+  .main-visual-control {width: 100%;}
+  .main-visual-slider .swiper-pagination .swiper-pagination-bullet {padding: 0 7px; font-size: 14px;}
+  .main-visual-control .main-visual-time {width: 70px;}
+  .main-visual-control .main-visual-arrow {padding: 0 8px;}
+  .main-notice-slider .swiper-navigation {margin-top: 10px;}
+  .main-notice-slider .swiper-navigation .swiper-button-arrow {font-size: 14px;}
+  .main-notice-slider .swiper-navigation .swiper-button-arrow img {width: 20px;}
+  .main-notice-slider .swiper-navigation .swiper-button-prev img {margin-left: 5px;}
+  .main-notice-slider .swiper-navigation .swiper-button-next img {margin-left: 5px;}
+
+  #main-notice {margin-top: -180px; padding-bottom: 28px;}
+
+  .main-qkmenu-list {gap: 20px 10px; padding: 40px 0;}
+  .main-qkmenu-icon {width: 62px; height: 62px; line-height: 62px;}
+  .main-qkmenu-text {font-size: 14px;}
+
+  .main-media-top .title {font-size: 26px;}
+  .main-media-slider .swiper-navigation {margin-top: 10px; gap: 0 15px;}
+  .main-media-slider .swiper-navigation .swiper-button-arrow {font-size: 14px;}
+  .main-media-slider .swiper-navigation .swiper-button-arrow img {width: 20px;}
+  .main-media-slider .swiper-navigation .swiper-button-prev img {margin-left: 5px;}
+  .main-media-slider .swiper-navigation .swiper-button-next img {margin-left: 5px;}
+  .main-media-bot {margin-top: 10px;}
+  .main-media-more {width: 110px; height: 30px; line-height: 30px; padding-left: 5px; font-size: 12px; font-weight: 400;}
+  .main-media-more i {width: 12px; height: 6px; margin-left: 7px;}
+
+  /* Sub */
+  .sub {padding-top: 60px;}
+
+  .sb_top_ct {height: 200px;}
+  .sb_top .sb_title2 {font-size: 30px;}
+
+  .sb_loca .sb_2menus_wrap > li > a {height: 40px; font-size: 14px;}
+
+  .sub_contents {margin-top: 60px;}
+
+  .sub_title {padding-left: 22px; font-size: 20px;}
+  .sub_title:after {width: 15px; top: 11px;}
+  .sub_title2 {margin-top: 10px; font-size: 18px;}
+  .sub_title2::before {width: 5px; height: 5px; top: 8px;}
+  .sub_expl {padding-left: 22px;}
+  .sub_expl2 {margin-top: 5px; font-size: 14px;}
+
+  /* 사업안내 > 사업개요 */
+  .overview_in-2,
+  .overview_in-3,
+  .overview_in-4 {margin-top: 50px;}
+
+  .overview_in-1 .sub_in_ct {height: auto; padding: 50px 0;}
+  .ov_cir_wrap {display: block;}
+  .ov_cir-big {width: 100%; height: 100px; padding: 5px; border-radius: 20px;}
+  .ov_cir-big:not(:first-child) {margin-top: 10px;}
+  .ov_cir-big:after {display: none;}
+  .ov_cir-big.act:before {display: none;}
+  .ov_cir-small {width: 100%; height: 100%; border-radius: 15px;}
+  .ov_cir-small:before,
+  .ov_cir-small:after {display: none;}
+  .ov_cir-small .t2 {margin-top: 7px;}
+  .ov_cir-big.act .ov_cir-small .t1 {font-size: 16px;}
+
+  .ov_intro_text {font-size: 22px;}
+
+  .ov_period_wrap {overflow-x: auto;}
+  .ov_period_inner {width: 800px;}
+  .ov_period_center {width: 800px;}
+  .ov_period_year .t1 {font-size: 16px;}
+  
+  .introduction .diff_chart_dp1 {display: inline-block; width: auto;}
+  .introduction .diff_chart_dp1:after {display: none;}
+  .introduction .diff_chart_dp2 {margin-top: 15px;}
+  .introduction .diff_chart_dp2 .box {max-width: calc(33.3333% - 5px);}
+  .introduction .diff_chart_dp2 .box:after {display: none;}
+  .introduction .diff_chart_dp2 .box:nth-child(2):before {display: none;}
+  
+  .introduction .overview_in-4 .diff_chart_dp1 {top: -40px;}
+  .introduction .smr_adv {padding: 75px 20px 20px;}
+  .introduction .smr_adv_summary {padding: 60px 20px 20px;}
+  .introduction .in_t3_wrap {flex-wrap: wrap; flex-direction: row; gap: 10px;}
+  .introduction .in_t3_box {width: calc(50% - 5px); padding: 10px;}
+  .introduction .in_t3_tit {font-size: 14px;}
+  .introduction .in_t3_txt {font-size: 13px;}
+
+  .ov_budget_wrap {padding: 60px 0 30px;}
+  .ov_budget-total {width: auto; max-width: 100%; height: 40px; line-height: 40px; font-size: 14px; padding: 0 30px;}
+  .ov_budget-total strong {font-size: 18px;}
+
+  .ov_pdf_head {padding: 10px;}
+  .ov_pdf_title {font-size: 18px;}
+  .ov_pdf_body {padding: 15px;}
+  .ov_pdf_inner ~ .ov_pdf_inner {margin-top: 15px;}
+  .ov_pdf_subject {margin-bottom: 5px; font-size: 16px;}
+  .ov_pdf_list {display: block;}
+  .ov_pdf_item {width: 50%;}
+  .ov_pdf_link {font-size: 14px;}
+  
+  /* 사업안내 > 사업추진일정 */
+  .schedule_img.schedule_pc {display: none;}
+  .schedule_img.schedule_tb {display: block;}
+
+  /* 사업단 소개 > 인사말 */
+  .greeting_in-2 {margin-top: 50px;}
+
+  .greeting_in-1 .container {padding: 0;}
+  .greeting_in-1 .sub_in_ct {height: auto; padding: 30px 0; background-position: bottom 0 right -30px; background-size: 200px auto;}
+  .greeting_bn {padding: 0 20px;}
+  .greeting_bn .t1 {width: 200px; font-size: 20px;}
+
+  .greeting_txt_wrap3 {margin-top: 20px;}
+  .greeting_txt_wrap1 .t1 {font-size: 18px;}
+  .greeting_txt_wrap2 .t1 {font-size: 14px;}
+  .greeting_txt_wrap3 .t1 {font-size: 14px;}
+  .greeting_txt_wrap3 .sign {display: block; margin: 20px 0 0;}
+  .greeting_txt_wrap3 .sign img {width: 100px;}
+
+  /* 사업단 소개 > 설립목적 */
+  .setup_in-2 {margin-top: 50px;}
+
+  .setup_purpose_bn {padding: 30px 0;}
+  .setup_purpose_bn .logo {width: 30px; margin: 0 auto 10px;}
+  .setup_purpose_bn .t1 {font-size: 14px;}
+
+  .setup_mission {flex-flow: column wrap; gap: 10px 0; margin-top: 15px;}
+  .setup_mission .box {width: 100%;}
+  .setup_mission .box .num {font-size: 14px;}
+  .setup_mission .box .t1 {font-size: 14px;}
+
+  /* 사업단 소개 > 조직도 */
+  .organ_in-1 .sub_in_ct {padding: 50px 0; background-position: bottom 10px right; background-size: 180px auto;}
+  .organ_dp1 > li > .organ_cn {width: 80px; padding: 10px 0 8px;}
+  .organ_dp1 > li > .organ_cn img {width: 18px;}
+  .organ_dp1 > li > .organ_cn .t1 {font-size: 14px;}
+  .organ_dp2 > li:not(:first-child) {margin-left: 5px;}
+  .organ_dp2 > li:not(:first-child):before {left: calc((50% + 5px) * -1); width: calc(100% + 5px);}
+  .organ_dp2 > li:not(:first-child):after {left: calc((50% + 5px) * -1); width: calc(100% + 5px);} 
+  .organ_dp2 > li > .organ_cn {width: 100px;}
+  .organ_dp2 > li > .organ_cn .t1 {font-size: 12px;}
+  .organ_dp3 > li:not(:first-child) {margin-left: 5px;}
+  .organ_dp3 > li:not(:first-child):before {left: calc((50% + 5px) * -1); width: calc(100% + 5px);}
+  .organ_dp3 > li > .organ_cn {width: 60px;}
+  .organ_dp3 > li > .organ_cn .t1 {font-size: 12px;}
+
+  /* 사업단 소개 > CI소개 */
+  .ci_intro .lt .expl1 {font-size: 14px;}
+  .ci_intro .lt .expl2 {margin-top: 10px; font-size: 12px;}
+  .ci_intro .lt .download_btn_wrap {flex-flow: column wrap; width: 100%; margin-top: 10px;}
+  .ci_intro .lt .download-btn {width: 100%; height: 40px; line-height: 40px; font-size: 12px;}
+  .ci_intro .rt {margin-top: 20px;}
+  .df_ci_img img {width: 180px;}
+
+
+  .ci_lay .box .bct .t1 {font-size: 14px;}
+  .ci-signature {margin: 5px -5px -5px;}
+  .ci-signature .box {width: 100%; padding: 5px;}
+  .ci-signature .tct {padding: 20px 0;}
+  .ci-signature .tct img {width: 150px;}
+
+  .ci-type .box .tct ul li:nth-child(2) img {width: 175px;}
+
+  .ci-emblem .box {width: 100%;}
+  .ci-emblem .tct img {width: auto; max-width: none; height: 100px;}
+
+  .ci_main_color_wrap {padding: 20px 10px;}
+  .ci_main_color_wrap .box-tit {font-size: 16px;}
+  .ci_main_color_list .color-expl {letter-spacing: -0.2px;}
+  .ci_sub_color_wrap {padding: 20px 10px;}
+  .ci_sub_color_wrap .box-tit {font-size: 16px;}
+  .ci_sub_color_list > li {display: block; width: 100%;}
+  .ci_sub_color_list > li:not(:first-child) {margin-left: 0; margin-top: 15px;}
+
+  /* 사업단 소개 > 오시는 길 */
+  .map_info .t1 .big {font-size: 14px;}
+  .map_info .t1 .sm {font-size: 14px;}
+  .map-btn {position: inherit; top: inherit; right: inherit; margin-top: 10px; width: 130px;}
+  .map-btn img {width: 18px; margin-left: 15px;}
+
+  .map_ui .root_daum_roughmap .wrap_map {height: 300px !important;}
+
+  /* i-SMR > SMR개요 */
+  .smr_in-1 {padding-bottom: 50px;}
+  .smr_in-2 {margin-top: 50px;}
+  .smr_in-3 {margin-top: 50px;}
+
+  .numtxt_box > ul > li {display: block; width: 100%;}
+  .numtxt_in .num {font-size: 12px;}
+  .numtxt_in .t1 {font-size: 14px;}
+  .numtxt_in .t2 {font-size: 12px;}
+
+  .smr_img_box1 .smr_img_in {padding: 10px;}
+  .smr_img-cf {font-size: 12px;}
+
+  .smr_adv {padding: 50px 20px 20px;}
+  .smr_adv_summary {padding: 30px 10px 10px;}
+  .smr_adv_summary .t1 {top: -30px; width: 60px; height: 60px; margin-left: -30px; font-size: 14px;}
+  .smr_adv_summary_wrap > ul > li {display: block; width: 100%;}
+  .smr_adv_summary_in .in_t1 {font-size: 14px;}
+  .smr_adv_summary_in .in_t2 {font-size: 12px;}
+
+  .smr_adv_detail .t1 {font-size: 14px;}
+  .smr_adv_detail .t1 span {height: 18px; line-height: 18px; font-size: 12px;}
+  .smr_adv_detail_wrap {padding: 10px;}
+  .smr_adv_detail_in {padding: 5px;}
+  .smr_adv_detail_in .in_top {text-align: left;}
+  .smr_adv_detail_in .in_top-t1 {font-size: 14px;}
+  .smr_adv_detail_in .in_top-grid {right: 5px; width: 50px; height: 20px; line-height: 20px; margin-top: -10px; font-size: 12px;}
+  .smr_adv_detail_in .in_ct {flex-flow: column wrap;}
+  .smr_adv_detail_in .in_ct_li {width: 100%;}
+  .smr_adv_detail_in .in_ct-t1 {font-size: 12px;}
+  .smr_adv_detail_in .in_ct-t2 {font-size: 14px;}
+  .smr_adv_detail-cf {padding: 10px 5px; font-size: 14px;}
+  .smr_adv-cf p {font-size: 12px;}
+  
+
+  .smr_worldmap {padding: 65% 20px 20px;}
+  .smr_worldmap-cf {font-size: 12px;}
+  .smr_worldmap_li:not(:first-child) {margin-top: 10px;}
+  .smr_worldmap_li .t1 {font-size: 12px;}
+  .smr_worldmap_dev > li {font-size: 12px;}
+
+  /* i-SMR > 혁신설계 및 기술 */
+  .innov_in-2 {margin-top: 50px;}
+  .innov_in-3 {padding-top: 50px;}
+
+  .ismr_bn .t1 {font-size: 16px;}
+  .ismr_bn .t1 br {display: none;}
+  .ismr_bn .t2 {font-size: 14px;}
+  .ismr_bn-download {width: 130px; height: 35px; line-height: 33px; margin: 20px auto 0; font-size: 12px;}
+  
+  .innov_design-rt {margin-top: 10px;}
+  .sb_tb th {padding: 5px; font-size: 14px;}
+  .sb_tb td {padding: 5px; font-size: 14px;}
+
+  .innov_tech > ul > li {width: 50%;}
+  .innov_tech_in {padding: 10px;}
+  .innov_tech_in .t1 {font-size: 14px;}
+  .innov_tech_in .t2 {margin-top: 5px; padding-top: 5px; font-size: 12px;}
+  .innov_tech_in .icon img {height: 26px;}
+
+  /* i-SMR > 차별성 */
+  .diff_in-1 .sub_title {font-size: 19px;}
+
+  .diff_pic > ul > li {display: block; width: 100%;}
+  .diff_pic_in {height: 300px;}
+  .diff_pic_in .t1 {font-size: 14px;}
+
+  .diff_gr-txt .t1 {font-size: 14px; padding-left: 10px;}
+  .diff_gr-txt .t1:before {width: 5px; height: 5px; top: 7px;}
+
+  .diff_chart {padding: 20px 10px;}
+  .diff_chart_dp1 {width: 120px; height: 80px;}
+  .diff_chart_dp1:after {bottom: -10px; height: 10px;}
+  .diff_chart_dp1 img {width: 55px;}
+  .diff_chart_dp2 {gap: 30px 5px; margin-top: 40px;}
+  .diff_chart_dp2 .box {max-width: calc(50% - 4px);}
+  .diff_chart_dp2 .box:not(:first-child):before {display: none;}
+  .diff_chart_dp2 .box:nth-child(2):before {display: block; left: calc((50% + 5px) * -1); width: calc(100% + 5px);}
+  .diff_chart_dp2 .dp2-iwrap {margin-top: 5px;}
+  .diff_chart_dp2 .dp2-t1 {padding: 5px; font-size: 12px; width: 100%;}
+  .diff_chart_dp2 .dp2-t2 {font-size: 14px;}
+
+  /* 게시판 공통 */
+  .bo_sch_wrap {width: 100% !important;}
+  .bo_sch select {width: 80px !important; height: 38px !important; font-size: 12px !important;}
+  .bo_sch .sch_bar {width: calc(100% - 80px) !important;}
+  .bo_sch .sch_input {height: 38px !important; font-size: 12px !important;}
+  .bo_sch .sch_btn {top: 4px !important; right: 4px !important; width: 30px !important; height: 30px !important; font-size: 12px !important;}
+
+  #bo_cate a {font-size: 12px !important;}
+  #bo_cate ul {margin: -5px !important;}
+  #bo_cate li {padding: 5px !important;}
+  #bo_cate li:not(:first-child):after {height: 12px !important; margin-top: -6px !important;}
+  #bo_cate #bo_cate_on:before {bottom: -3px !important; height: 8px !important;}
+
+  .board-v-cont {padding: 20px 0 !important;}
+}
+
+@media screen and (max-width:480px){
+  .ov_pdf_item {width: 100%;}
+
+  /* 사업안내 > 사업개요 */
+  .ov_intro_text {font-size: 18px;}
+  .introduction .diff_chart_dp1 {width: 100%;}
+  .introduction .diff_chart_dp2 {gap: 0;}
+  .introduction .diff_chart_dp2 .box {max-width: 100%; width: 100%;}
+  .introduction .diff_chart_dp2 .dp2-iwrap {height: auto; padding: 15px 0;}
+  .introduction .diff_chart_dp2 .dp2-icon {width: 50px; height: 50px;}
+  .introduction .diff_chart_dp2 .dp2-icon img {max-width: 100%; max-height: 100%;}
+
+  .introduction .smr_adv {padding: 65px 10px 10px;}
+  .introduction .in_t3_box {width: 100%;}
+  .introduction .overview_in-4 .diff_chart_dp1 {width: calc(100% - 40px); text-align: center;}
+  
+  /* 사업안내 > 사업추진일정 */
+  .schedule_img.schedule_tb {display: none;}
+  .schedule_img.schedule_mb {display: block;}
+}
