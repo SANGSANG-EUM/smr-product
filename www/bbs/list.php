@@ -65,13 +65,33 @@ if ($sca || $stx || $stx === '0') {     //검색이면
     $total_count = $board['bo_count_write'];
 }
 
+// 20231109 게시글 갯수 조절
 if(G5_IS_MOBILE) {
     $page_rows = $board['bo_mobile_page_rows'];
     $list_page_rows = $board['bo_mobile_page_rows'];
 } else {
-    $page_rows = $board['bo_page_rows'];
-    $list_page_rows = $board['bo_page_rows'];
+    if($board['bo_table'] == 'news'){
+        if(isset($_GET['newP'])){
+            $newP = $_GET['newP'];
+            $page_rows = $newP;
+            $list_page_rows = $newP;
+        }else{
+            $page_rows = 10;
+            $list_page_rows = 10; 
+        }
+
+    }else{
+        $page_rows = $board['bo_page_rows'];
+        $list_page_rows = $board['bo_page_rows'];
+    }  
 }
+// if(G5_IS_MOBILE) {
+//     $page_rows = $board['bo_mobile_page_rows'];
+//     $list_page_rows = $board['bo_mobile_page_rows'];
+// } else {
+//     $page_rows = $board['bo_page_rows'];
+//     $list_page_rows = $board['bo_page_rows'];
+// }
 
 if ($page < 1) { $page = 1; } // 페이지가 없으면 첫 페이지 (1 페이지)
 
@@ -207,7 +227,13 @@ if($page_rows > 0) {
 
 g5_latest_cache_data($board['bo_table'], $list);
 
-$write_pages = get_paging(G5_IS_MOBILE ? $config['cf_mobile_pages'] : $config['cf_write_pages'], $page, $total_page, get_pretty_url($bo_table, '', $qstr.'&amp;page='));
+// 20231109 게시글 갯수 조절
+if($newP){
+    $write_pages = get_paging(G5_IS_MOBILE ? $config['cf_mobile_pages'] : $config['cf_write_pages'], $page, $total_page, '?newP='.$newP.'&page=');
+}else{
+    $write_pages = get_paging(G5_IS_MOBILE ? $config['cf_mobile_pages'] : $config['cf_write_pages'], $page, $total_page, '/'.$bo_table.$qstr.'&page='); 
+}
+// $write_pages = get_paging(G5_IS_MOBILE ? $config['cf_mobile_pages'] : $config['cf_write_pages'], $page, $total_page, get_pretty_url($bo_table, '', $qstr.'&amp;page='));
 
 $list_href = '';
 $prev_part_href = '';

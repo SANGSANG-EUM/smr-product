@@ -10,7 +10,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
 <div id="gallery_view" class="sub gallery">
-  <?php sub_top($sb_menus, 'cs', 'gallery'); ?>
+  <?php sub_top($sb_menus, 'resources', 'videos'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">
@@ -130,7 +130,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
           <h2 id="bo_v_atc_title">본문</h2>
           <!-- 본문 내용 시작 { -->
           <div id="bo_v_con">
-            <?php echo get_view_thumbnail($view['content']); ?>
+            <div class="yt_box">
+              <iframe src="https://www.youtube.com/embed/<?php echo $view['wr_1']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <?php //echo get_view_thumbnail($view['content']); ?>
           </div>
           <!-- } 본문 내용 끝 -->
         </section>
@@ -199,7 +202,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <!-- } 게시글 이동 버튼 -->
 
         <!-- 댓글 영역 { -->
-        <?php include_once(G5_BBS_PATH.'/view_comment.php'); ?>
+        <?php //include_once(G5_BBS_PATH.'/view_comment.php'); ?>
         <!-- } 댓글 영역 -->
       </article>
       <!-- } 게시판 읽기 끝 -->

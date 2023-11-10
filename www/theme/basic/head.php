@@ -35,17 +35,17 @@ if(defined('_INDEX_')) { // index에서만 실행
     <div class="aside-in">
       <ul class="aside-ul">
         <li class="aside-li">
-          <button type="button" class="aside-btn aside-exp">
+          <a href="javascript:alert('Coming soon.');" class="aside-btn aside-exp">
             <div class="aside-icon">
               <img src="/source/img/icon-aside_exp.png" alt="">
             </div>
             <p class="aside-txt">
               Explorer
             </p>
-          </button>
+          </a>
         </li>
         <li class="aside-li">
-          <a href="" target="_blank" class="aside-btn aside-site">
+          <a href="https://ismr.or.kr/eng/" target="_blank" class="aside-btn aside-site">
             <div class="aside-icon">
               <img src="/source/img/icon-aside_site.png" alt="">
             </div>
@@ -55,7 +55,7 @@ if(defined('_INDEX_')) { // index에서만 실행
           </a>
         </li>
         <li class="aside-li">
-          <a href="/ko" class="aside-btn aside-lang">
+          <a href="javascript:alert('Coming soon.');" class="aside-btn aside-lang">
             <div class="aside-icon">
               <img src="/source/img/icon-aside_lang.png" alt="">
             </div>
@@ -88,24 +88,26 @@ if(defined('_INDEX_')) { // index에서만 실행
         </div>
         <div class="hd-logo">
           <a href="/">
-            <!-- <img src="" alt=""> -->
-            <span style="font-size: clamp(20px, 10vw, 24px); font-weight: 700; color: #fff;">i-SMR</span>
+            <img src="/source/img/logo_w.png" alt="i-SMR">
           </a>
         </div>
       </div>
       <div class="hd-right hd-in">
         <ul class="gnb-ul">
           <li class="gnb-li">
-            <a href="">i-SMR</a>
+            <a href="/sub/overview">i-SMR</a>
           </li>
           <li class="gnb-li">
-            <a href="">About us</a>
+            <a href="/sub/partners">About us</a>
           </li>
           <li class="gnb-li">
-            <a href="">Resources</a>
+            <a href="/video">Resources</a>
           </li>
           <li class="gnb-li">
-            <a href="">Contact</a>
+            <a href="javascript:alert('Coming soon.')">Contact</a>
+          </li>
+          <li class="gnb-li">
+            <a href="https://ismr.or.kr/eng/" target="_blank" class="gnb-smr"><img src="/source/img/icon-aside_site.png" alt=""><span>SMR Website</span></a>
           </li>
         </ul>
       </div>

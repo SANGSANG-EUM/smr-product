@@ -7,7 +7,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 ?>
 
 <div id="gallery_write" class="sub gallery">
-  <?php sub_top($sb_menus, 'cs', 'gallery'); ?>
+  <?php sub_top($sb_menus, 'resources', 'videos'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">
@@ -132,15 +132,19 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             </div>
           </div>
 
+          <div class="write_div">
+            <input type="text" name="wr_1" value="<?php echo $write['wr_1'] ?>" placeholder="유튜브 URL 마지막 부분" class="frm_input full_input required" size="50" maxlength="255">
+          </div>
+
           <?php for ($i=1; $is_link && $i<=G5_LINK_COUNT; $i++) { ?>
-          <div class="bo_w_link write_div">
+          <!-- <div class="bo_w_link write_div">
             <label for="wr_link<?php echo $i ?>"><i class="fa fa-link" aria-hidden="true"></i><span class="sound_only"> 링크  #<?php echo $i ?></span></label>
             <input type="text" name="wr_link<?php echo $i ?>" value="<?php if($w=="u"){ echo $write['wr_link'.$i]; } ?>" id="wr_link<?php echo $i ?>" class="frm_input full_input" size="50">
-          </div>
+          </div> -->
           <?php } ?>
 
           <?php for ($i=0; $is_file && $i<$file_count; $i++) { ?>
-          <div class="bo_w_flie write_div">
+          <!-- <div class="bo_w_flie write_div">
             <div class="file_wr write_div">
               <label for="bf_file_<?php echo $i+1 ?>" class="lb_icon"><i class="fa fa-folder-open" aria-hidden="true"></i><span class="sound_only"> 파일 #<?php echo $i+1 ?></span></label>
               <input type="file" name="bf_file[]" id="bf_file_<?php echo $i+1 ?>" title="파일첨부 <?php echo $i+1 ?> : 용량 <?php echo $upload_max_filesize ?> 이하만 업로드 가능" class="frm_file ">
@@ -154,7 +158,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
               <input type="checkbox" id="bf_file_del<?php echo $i ?>" name="bf_file_del[<?php echo $i;  ?>]" value="1"> <label for="bf_file_del<?php echo $i ?>"><?php echo $file[$i]['source'].'('.$file[$i]['size'].')';  ?> 파일 삭제</label>
             </span>
             <?php } ?>
-          </div>
+          </div> -->
           <?php } ?>
 
           <?php if ($is_use_captcha) { //자동등록방지  ?>

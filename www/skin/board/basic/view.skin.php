@@ -10,10 +10,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
 <div id="notice_view" class="sub notice">
-  <?php if($bo_table=='faq') {
-    sub_top($sb_menus, 'community', 'faq');
+  <?php if($bo_table=='research') {
+    sub_top($sb_menus, 'resources', 'research');
   } else {
-    sub_top($sb_menus, 'community', 'notice');
+    sub_top($sb_menus, 'resources', 'news');
   } ?>
 
   <div class="sub_contents">
@@ -26,10 +26,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
             <div class="board-head">
               <p class="board-v-subj"><?php echo get_text($view['wr_subject']);?></p>
-              <p class="board-v-date"><?php echo date("Y.m.d", strtotime($view['wr_datetime'])); ?></p>
+              <p class="board-v-date"><i class="gall_date_icon"></i><?php echo date("Y.m.d", strtotime($view['wr_datetime'])); ?></p>
             </div>
 
-            <div id="bo_v_source">
+            <div class="board-v-cont">
+              <div class="board-v-cont-in"><?php echo get_view_thumbnail($view['content']); ?></div>
+
+              <div id="bo_v_source">
               <!-- 첨부파일 시작 { -->
               <?php
               $cnt = 0;
@@ -50,6 +53,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                   ?>
                   <li>
                     <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download">
+                      <img src="/source/img/icon-download.png" alt="">
                       <strong><?php echo $view['file'][$i]['source'] ?></strong>
                       <span class="bo_v_file_size"><?php echo $view['file'][$i]['content'] ?> (<?php echo $view['file'][$i]['size'] ?>)</span>
                     </a>
@@ -91,12 +95,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
               <!-- } 관련링크 끝 -->
             </div>
 
-            <div class="board-v-cont">
-              <?php echo get_view_thumbnail($view['content']); ?>
             </div>
 
+
             <div class="board-v-btn_group">
-              <a href="<?php echo $list_href ?>" class="board-v-golist-btn">목록</a>
+              <a href="<?php echo $list_href ?>" class="board-v-golist-btn">LIST</a>
               <?php if($prev_href || $next_href) { ?>
               <div class="board-v-navi_group">
                 <?php if($prev_href) { ?>
@@ -108,6 +111,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
               </div>
               <?php } ?>
             </div>
+            
             
             <!-- 게시물 관리 버튼 시작 { -->
             <div id="bo_v_bot">

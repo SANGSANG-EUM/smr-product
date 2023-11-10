@@ -3,129 +3,92 @@ include_once('./_common.php');
 
 $sb_menus = [
   [
-    'id' => 'business',
-    'name' => '사업안내',
+    'id' => 'ismr',
+    'name' => 'i-SMR',
     'link' => '/sub/overview',
     'sb_2menus' => [
       [
         'id' => 'overview',
-        'name' => '사업개요',
+        'name' => 'Overview',
         'link' => '/sub/overview'
       ],
       [
-        'id' => 'schedule',
-        'name' => '사업추진일정',
-        'link' => '/sub/schedule'
+        'id' => 'explorer',
+        'name' => 'SMR explorer',
+        'link' => "javascript:alert('Coming soon.');"
+      ],
+      [
+        'id' => 'vision',
+        'name' => 'SMR vision',
+        'link' => '/sub/vision'
+      ],
+      [
+        'id' => 'features',
+        'name' => 'Features',
+        'link' => '/sub/features'
       ]
     ]
   ],
   [
-    'id' => 'introduction',
-    'name' => '사업단 소개',
-    'link' => '/sub/greeting',
+    'id' => 'aboutus',
+    'name' => 'About us',
+    'link' => '/sub/partners',
     'sb_2menus' => [
       [
-        'id' => 'greeting',
-        'name' => '인사말',
-        'link' => '/sub/greeting'
+        'id' => 'partners',
+        'name' => 'Partners',
+        'link' => '/sub/partners'
       ],
       [
-        'id' => 'setup',
-        'name' => '설립목적',
-        'link' => '/sub/setup'
+        'id' => 'energy',
+        'name' => 'K-energy',
+        'link' => '/sub/energy'
       ],
       [
-        'id' => 'organization',
-        'name' => '조직도',
-        'link' => '/sub/organization'
-      ],
-      [
-        'id' => 'ci',
-        'name' => 'CI소개',
-        'link' => '/sub/ci'
-      ],
-      [
-        'id' => 'map',
-        'name' => '오시는 길',
-        'link' => '/sub/map'
+        'id' => 'history',
+        'name' => 'History',
+        'link' => '/sub/history'
       ]
     ]
   ],
   [
-    'id' => 'ismr',
-    'name' => 'i-SMR',
-    'link' => '/sub/smr',
+    'id' => 'resources',
+    'name' => 'Resources',
+    'link' => '/sub/videos',
     'sb_2menus' => [
       [
-        'id' => 'smr',
-        'name' => 'SMR개요',
-        'link' => '/sub/smr'
-      ],
-      [
-        'id' => 'innovation',
-        'name' => '혁신설계',
-        'link' => '/sub/innovation'
-      ],
-      [
-        'id' => 'technology',
-        'name' => '혁신기술',
-        'link' => '/sub/technology'
-      ],
-      [
-        'id' => 'differentiation',
-        'name' => '차별성',
-        'link' => '/sub/differentiation'
-      ]
-    ]
-  ],
-  [
-    'id' => 'community',
-    'name' => '커뮤니티',
-    'link' => '/notice',
-    'sb_2menus' => [
-      [
-        'id' => 'notice',
-        'name' => '공지사항',
-        'link' => '/notice'
+        'id' => 'videos',
+        'name' => 'Videos',
+        'link' => '/video'
       ],
       [
         'id' => 'faq',
-        'name' => 'FAQ',
-        'link' => '/faq'
+        'name' => 'Factsheets',
+        'link' => "javascript:alert('Coming soon.');"
       ],
       [
-        'id' => 'library',
-        'name' => '자료실',
-        'link' => '/library'
+        'id' => 'research',
+        'name' => 'Research',
+        'link' => "javascript:alert('Coming soon.');"
       ],
       [
-        'id' => 'inquiry',
-        'name' => '문의하기',
-        'link' => '/qa'
+        'id' => 'news',
+        'name' => 'News',
+        'link' => '/news'
       ]
     ]
   ],
   [
-    'id' => 'media',
-    'name' => '미디어룸',
-    'link' => '/news',
-    'sb_2menus' => [
-      [
-        'id' => 'news',
-        'name' => '사업단 소식',
-        'link' => '/news'
-      ],
-      [
-        'id' => 'press',
-        'name' => 'i-SMR 보도자료',
-        'link' => '/press'
-      ],
-      [
-        'id' => 'newsletter',
-        'name' => 'SMR 뉴스레터',
-        'link' => '/newsletter'
-      ]
-    ]
+    'id' => 'contact',
+    'name' => 'Contact',
+    'link' => '/contact',
+    // 'sb_2menus' => [
+    //   [
+    //     'id' => 'contact2',
+    //     'name' => 'Contact',
+    //     'link' => '/contact'
+    //   ]
+    // ]
   ]
 ];
 

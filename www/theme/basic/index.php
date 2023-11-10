@@ -73,8 +73,8 @@ include_once(G5_THEME_PATH.'/head.php');
             <div id="vision" class="mainsec2-sl-box active">
               <div class="mainsec2-slider swiper swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="mainsec2-sl swiper-slide"
-                    style="background-image: url('/source/img/img-mainsec2_sl_vision_1.jpg');">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_1.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">Experienced Energy Solutions Provider</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -90,8 +90,8 @@ include_once(G5_THEME_PATH.'/head.php');
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide"
-                    style="background-image: url('/source/img/img-mainsec2_sl_vision_2.jpg');">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_2.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">Energy Transition Game-Changer</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -112,8 +112,8 @@ include_once(G5_THEME_PATH.'/head.php');
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide"
-                    style="background-image: url('/source/img/img-mainsec2_sl_vision_3.jpg');">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_3.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">Net-Zero Future Builder</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -144,7 +144,8 @@ include_once(G5_THEME_PATH.'/head.php');
             <div id="energy" class="mainsec2-sl-box">
               <div class="mainsec2-slider energy-slider swiper swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="mainsec2-sl swiper-slide" style="background: #333;">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_1.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">Capabilities to Complete on Time, within Budget</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -168,7 +169,8 @@ include_once(G5_THEME_PATH.'/head.php');
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide" style="background: #555;">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_2.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">Excellent and Abundant NPP Experience and Capability</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -185,7 +187,8 @@ include_once(G5_THEME_PATH.'/head.php');
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide" style="background: #777;">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_1.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">Abundance of Skilled Manpower
                       </p>
@@ -215,7 +218,8 @@ include_once(G5_THEME_PATH.'/head.php');
             <div id="history" class="mainsec2-sl-box">
               <div class="mainsec2-slider swiper swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="mainsec2-sl swiper-slide" style="background: salmon;">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_1.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">1. Design and construction of HANARO, a research reactor</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -230,22 +234,23 @@ include_once(G5_THEME_PATH.'/head.php');
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide"
-                    style="background-image: url('/source/img/img-mainsec2_sl_vision_2.jpg');">
-                    <p class="mainsec2-sl-tit">2. Development of Korean standard nuclear reactor (OPR1000)</p>
-                    <div class="mainsec2-sl-txt-wr">
-                      <div class="mainsec2-sl-in">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_2.jpg" alt="" class="mainsec2-sl-bg">
+                    <div class="mainsec2-sl-in">
+                      <p class="mainsec2-sl-tit">2. Development of Korean standard nuclear reactor (OPR1000)</p>
+                      <div class="mainsec2-sl-txt-wr">
                         <p class="mainsec2-sl-txt">Development period: 1986 ~ 1996 (KRW 330 billion)</p>
                         <p class="mainsec2-sl-txt">characteristic : <br>
-                          - The first independent large-scale light water reactor model developed through nuclear power
+                          - The first independent large-scale light water reactor model developed through nuclear
+                          power
                           technology independence <br> - Twelve OPR1000 series nuclear power plants are currently in
                           operation.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide"
-                    style="background-image: url('/source/img/img-mainsec2_sl_vision_3.jpg');">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_3.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">3. Development of APR1400</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -259,8 +264,8 @@ include_once(G5_THEME_PATH.'/head.php');
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide"
-                    style="background-image: url('/source/img/img-mainsec2_sl_vision_3.jpg');">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_1.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">4. Development of SMART</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -274,8 +279,8 @@ include_once(G5_THEME_PATH.'/head.php');
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide"
-                    style="background-image: url('/source/img/img-mainsec2_sl_vision_3.jpg');">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_2.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">5. Development of very high temperature gas reactor (VHTR)</p>
                       <div class="mainsec2-sl-txt-wr">
@@ -289,19 +294,13 @@ include_once(G5_THEME_PATH.'/head.php');
                       </div>
                     </div>
                   </div>
-                  <div class="mainsec2-sl swiper-slide"
-                    style="background-image: url('/source/img/img-mainsec2_sl_vision_3.jpg');">
+                  <div class="mainsec2-sl swiper-slide">
+                    <img src="/source/img/img-mainsec2_sl_vision_3.jpg" alt="" class="mainsec2-sl-bg">
                     <div class="mainsec2-sl-in">
                       <p class="mainsec2-sl-tit">6. Development of Sodium Cooled Fast Reactor (SFR)</p>
                       <div class="mainsec2-sl-txt-wr">
                         <p class="mainsec2-sl-txt">Development period: 1997 ~ Present (KRW 375.7 billion)</p>
-                        <p class="mainsec2-sl-txt">characteristic : <br>
-                          - Highly toxic and long-lived nuclides in spent nuclear fuel can be converted to short-lived
-                          or
-                          stable nuclides.
-                          <br> - 4th generation nuclear power plant with greatly improved safety in the event of a
-                          serious
-                          accident
+                        <p class="mainsec2-sl-txt">characteristic : <br> - Highly toxic and long-lived nuclides in spent nuclear fuel can be converted to short-lived or stable nuclides. <br> - 4th generation nuclear power plant with greatly improved safety in the event of a serious accident
                         </p>
                       </div>
                     </div>
@@ -637,26 +636,16 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
       </div>
     </section>
-  </div>
-  <div class="main-foot">
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="foot-logo">
-          <a href="" style="font-size: 26px; font-weight: 600; color: rgba(255, 255, 255, .3);">i-SMR</a>
-        </div>
-        <div class="foot-btm">
-          <div class="foot-btm-info">
-            <p class="foot-address">(34126) 13th floor, Science Center, 1 Expo-ro, Yuseong-gu, Daejeon</p>
-            <p class="foot-copyright">Copyrightⓒ 2023 Innovative Small Module Reactor Technology Development Group. All Rights Reserved.</p>
-          </div>
-          <div class="foot-btm-link-wr">
-            <a href="" class="foot-btm-link">Terms of Use</a>
-            <a href="" class="foot-btm-link white">Privacy Policy</a>
-          </div>
-        </div>
+    <section id="" class="background section mainsec mainsec5"> <!-- fp-auto-height -->
+      <div class="main-foot">
+        <?php include_once(G5_THEME_PATH."/tail_content.php"); ?>
       </div>
-    </footer>
+    </section>
+
   </div>
+  <!-- <div class="main-foot" data-count="0">
+    <?php //include_once(G5_THEME_PATH."/tail_content.php"); ?>
+  </div> -->
 </div>
 
 <script>

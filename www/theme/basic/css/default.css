@@ -408,7 +408,7 @@ box-shadow:0 1px 10px rgba(0,0,0,.1)}
 .new_win .btn_submit {padding:0 20px;height:45px;font-weight:bold;font-size:1.083em}
 
 /* 검색결과 색상 */
-.sch_word {color:#fff;background:#ff005a;padding:2px 5px 3px;line-height:18px;margin:0 2px}
+.sch_word {color: #009AF1;}
 
 /* 자바스크립트 alert 대안 */
 #validation_check {margin:100px auto;width:500px}

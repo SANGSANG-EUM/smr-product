@@ -17,9 +17,7 @@ if(G5_COMMUNITY_USE === false) {
 <hr>
 
 <!-- 푸터 시작 { -->
-<div id="footer">
-
-</div>
+<?php include_once(G5_THEME_PATH."/tail_content.php"); ?>
 <!-- } 푸터 끝 -->
 
 <?php

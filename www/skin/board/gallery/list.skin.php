@@ -5,14 +5,10 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
 
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
-
-/*
-#관리자 > 게시판 관리 > 갤러리 이미지 폭, 갤러리 이미지 높이 = 300 으로 설정
-*/
 ?>
 
 <div id="gallery_list" class="sub gallery">
-  <?php sub_top($sb_menus, 'cs', 'gallery'); ?>
+  <?php sub_top($sb_menus, 'resources', 'videos'); ?>
 
   <!-- sub contents { -->
   <div class="container sub_contents">
@@ -35,8 +31,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <div class="bo_top_info">
           <!-- 게시판 페이지 정보 { -->
           <div id="bo_list_total">
-            <span>Total <?php echo number_format($total_count) ?>건</span>
-            <?php echo $page ?> 페이지
+            Total
+            <span> <?php echo number_format($total_count) ?></span>
+            <!-- <?php //echo $page ?> 페이지 -->
           </div>
           <!-- } 게시판 페이지 정보 -->
 
@@ -51,15 +48,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <label for="sfl" class="sound_only">검색대상</label>
                 <div class="bo_sch_ct">
                   <select name="sfl" id="sfl">
-                    <option value="wr_subject||wr_content" selected="selected">전체</option>
-                    <option value="wr_subject">제목</option>
-                    <option value="wr_content">내용</option>
+                    <option value="wr_subject||wr_content" selected="selected">Total</option>
+                    <option value="wr_subject">Subject</option>
+                    <option value="wr_content">Content</option>
                   </select>
-                  
                   <div class="sch_bar">
                     <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
-                    <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required id="stx" class="sch_input" size="25" maxlength="20" placeholder=" 검색어를 입력해주세요">
-                    <button type="submit" value="검색" class="sch_btn">
+                    <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required id="stx" class="sch_input" size="25" maxlength="20" placeholder=" Please enter your search term.">
+                    <button type="submit" value="Search" class="sch_btn">
                       <i class="fa fa-search" aria-hidden="true"></i>
                       <span class="sound_only">검색</span>
                     </button>
@@ -134,22 +130,27 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                       ?>
                     </span>
                   </div>
+
                   <div class="gall_con">
                     <div class="gall_img">
-                      <a href="<?php echo $list[$i]['href'] ?>">
+                      <a href="javascript:void(0);" class="gall-pop-btn gall-pop-btn--<?=$i?>">
+                      <!-- <a href="<?php //echo $list[$i]['href'] ?>"> -->
                       <?php
                       if ($list[$i]['is_notice']) { // 공지사항  ?>
                         <span class="is_notice" style="<?php echo $line_height_style; ?>">공지</span>
                       <?php } else {
-                        $thumb = get_list_thumbnail($board['bo_table'], $list[$i]['wr_id'], $board['bo_gallery_width'], $board['bo_gallery_height'], false, true);
 
-                        if($thumb['src']) {
-                          $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" >';
-                        } else {
-                          $img_content = '<span class="no_image" style="'.$line_height_style.'">no image</span>';
-                        }
+                        echo '<img src="https://i.ytimg.com/vi/'.$list[$i]['wr_1'].'/maxresdefault.jpg" alt="" >';
 
-                        echo run_replace('thumb_image_tag', $img_content, $thumb);
+                        // $thumb = get_list_thumbnail($board['bo_table'], $list[$i]['wr_id'], $board['bo_gallery_width'], $board['bo_gallery_height'], false, true);
+
+                        // if($thumb['src']) {
+                        //   $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" >';
+                        // } else {
+                        //   $img_content = '<span class="no_image" style="'.$line_height_style.'">no image</span>';
+                        // }
+
+                        // echo run_replace('thumb_image_tag', $img_content, $thumb);
                       }
                       ?>
                       </a>
@@ -159,10 +160,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                       <a href="<?php echo $list[$i]['ca_name_href'] ?>" class="bo_cate_link"><?php echo $list[$i]['ca_name'] ?></a>
                       <?php } ?>
 
-                      <a href="<?php echo $list[$i]['href'] ?>" class="cut_text bo_tit">
+                      <a href="javascript:void(0);" onclick="javascript:video_up(<?=$i?>);" class="cut_text bo_tit text_row2 gall-pop-btn">
+                      <!-- <a href="<?php //echo $list[$i]['href'] ?>" class="cut_text bo_tit text_row2"> -->
                         <?php echo $list[$i]['wr_subject']; //글 제목 ?>
                       </a>
-                      <duv class="bo_cnt"><?php echo utf8_strcut(strip_tags($list[$i]['wr_content']), 68, '..'); ?></duv>
+                      <div class="bo_cnt"><?php echo utf8_strcut(strip_tags($list[$i]['wr_content']), 68, '..'); ?></div>
                     </div>
 
                     <div class="cf gall_info">
@@ -170,28 +172,49 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                         <li>
                           <span class="sound_only">작성자 </span>
                           <span class="gall_info_txt gall_writer">
-                            <i class="fa fa-user-o" aria-hidden="true"></i><?php echo $list[$i]['name'] ?>
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <?php echo $list[$i]['name'] ?>
                           </span>
                         </li>
                         <li>
                           <span class="sound_only">조회 </span>
                           <span class="gall_info_txt gall_view">
-                            <i class="fa fa-eye" aria-hidden="true"></i><?php echo $list[$i]['wr_hit'] ?>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <?php echo $list[$i]['wr_hit'] ?>
                           </span>
                         </li>
                       </ul>
                       <div class="gall_info_date">
-                        <span class="sound_only">작성일 </span>
+                        <span class="sound_only">작성일</span>
                         <span class="gall_info_txt gall_date">
+                          <i class="gall_date_icon"></i>
                           <?php echo date("Y.m.d", strtotime($list[$i]['wr_datetime'])) ?>
                         </span>
                       </div>
                     </div>
                   </div>
+
+                  <!-- 팝업 { -->
+                    <div id="video_up<?=$i?>" class="video-pop-wr">
+                    <div class="video-dim"></div>
+                    <div class="video-pop">
+                      <div class="video-pop-top">
+                        <p class="video-pop-tit"><?php echo $list[$i]['subject']?></p>
+                        <button type="button" class="video-close"></button>
+                      </div>
+                      <div class="video-pop-cnt">
+                        <div class="video-wr">
+                          <iframe src="https://www.youtube.com/embed/<?php echo $list[$i]['wr_1']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- } 팝업 -->
+
                 </div>
               </li>
               <?php } ?>
-              <?php if (count($list) == 0) { echo "<li class=\"empty_list\">게시물이 없습니다.</li>"; } ?>
+              <?php if (count($list) == 0) { echo "<li class=\"empty_list\">There is no post.</li>"; } ?>
             </ul>
           </div>
           
@@ -228,11 +251,28 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         </form>
       </div>
       <!-- } 게시판 목록 끝 -->
+      
+
 
     </div>
   </div>
   <!-- } sub contents -->
 </div>
+
+<script>
+// 갤러리 팝업
+$('.gall-pop-btn').on('click', function(){
+  $('.video-pop-wr').hide();
+  $(this).closest('.gall_box').find('.video-pop-wr').fadeIn();
+  $('body, html').addClass('lock');
+});
+
+$('.video-close').on('click', function(){
+  $('.video-pop-wr').fadeOut();
+  $('body, html').removeClass('lock');
+});
+
+</script>
 
 <?php if($is_checkbox) { ?>
 <noscript>
