@@ -60,7 +60,7 @@ function sub_top($sb_menus, $sb_id, $pg_id){
   }
 ?>
 
-<section class="sub-top">
+<section class="sub-top <?php echo $menu['name']; ?>">
   <h2 class="sound_only"><?php echo $menu['name']; ?> Page</h2>
   
   <div class="sub-top-in">

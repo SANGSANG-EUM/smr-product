@@ -9,7 +9,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
-<div id="notice_view" class="sub notice">
+<div id="notice_view" class="sub notice contents_wrap">
   <?php if($bo_table=='research') {
     sub_top($sb_menus, 'resources', 'research');
   } else {

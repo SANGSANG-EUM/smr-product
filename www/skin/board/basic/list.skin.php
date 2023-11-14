@@ -14,7 +14,7 @@ if ($is_nogood) $colspan++;
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<div id="notice_list" class="sub notice">
+<div id="notice_list" class="sub notice contents_wrap">
   <?php sub_top($sb_menus, 'resources', 'news'); ?>
 
   <div class="sub_contents">
@@ -150,7 +150,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                         </label>
                       </th>
                       <?php } ?>
-                      <th scope="col">Order</th>
+                      <th scope="col">No</th>
                       <th scope="col">Subject</th>
                       <!-- <th scope="col">글쓴이</th> -->
                       <!-- <th scope="col"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?>조회 </a></th> -->

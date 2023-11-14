@@ -21,8 +21,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
           </p>
         </div>
         <div class="sub-title">
-          We introduce <b>i-SMR, an eco-friendly energy solution</b> <br> that will lead the way for <b>future energy
-            businesses and contribute to global carbon neutrality.</b>
+        Introducing <b>eco-friendly energy i-SMR</b> to lead <br> <b>future energy businesses</b> and contribute to <br> <b>global carbon neutrality.</b>
         </div>
       </div>
       <div class="overview-video">

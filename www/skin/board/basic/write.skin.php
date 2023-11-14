@@ -6,7 +6,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<div id="notice_write" class="sub notice">
+<div id="notice_write" class="sub notice contents_wrap">
   <?php if($bo_table=='faq') {
     sub_top($sb_menus, 'community', 'faq');
   } else {

@@ -10,6 +10,27 @@ $(document).ready(function () {
     }
   });
 
+  // header 2depth
+  $('.gnb-li').on('mouseenter', function () {
+    $(this).find('.gnb-dep2-ul').stop().slideDown(200);
+  });
+  $('.gnb-li').on('mouseleave', function () {
+    $('.gnb-dep2-ul').stop().slideUp(200);
+  });
+
+
+  // sitemap
+  $('.hd-sitemap-btn').on('click', function () {
+
+    if ($(this).hasClass('on')) {
+      $('.sitemap-wr').fadeOut().removeClass('on');
+      $(this).removeClass('on');
+    } else {
+      $('.sitemap-wr').fadeIn().addClass('on');
+      $(this).addClass('on');
+    }
+  });
+
 
   // footer top button
   $('.aside-top').click(function () {
@@ -20,7 +41,7 @@ $(document).ready(function () {
 
 
   // sub location button
-  $('.sub-top-tbtn').on('click', function(){
+  $('.sub-top-tbtn').on('click', function () {
     $('.sub-location-wr').stop().slideToggle(200);
   });
 
@@ -260,6 +281,48 @@ $(document).ready(function () {
     createSwiper3(config.id, config.delay);
   });
 
+  
+  // K-energy 페이지 : 스와이퍼 슬라이드
+  let subCafeSl = new Swiper(".energy-slider", {
+    slidesPerView: 1,
+    // spaceBetween: 10,
+    slidesToScroll: 1,
+    // centeredSlides: true,
+    loop: true,
+    loopAdditionalSlides: 1,
+    accessibility: true,
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
+    pagination: {
+      el: ".energy-sl-pagination",
+      clickable: true,
+      // type: "fraction",
+    },
+    navigation: {
+      nextEl: ".energy-arrow.next",
+      prevEl: ".energy-arrow.prev",
+    },
+    // a11y: {
+    //   prevSlideMessage: '이전 슬라이드',
+    //   nextSlideMessage: '다음 슬라이드',
+    //   slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+    // },
+    on: {
+      slideChange: function () {
+
+      },
+    },
+    breakpoints: {
+      1600: {
+        spaceBetween: 220,
+        slidesPerView: 'auto',
+      },
+    },
+  });
 
 
   // plugin - Match Height

@@ -5,10 +5,11 @@
 #bo_list:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_list .tbl_head01{margin: 0 0 15px;}
 #bo_list .tbl_head01 table{border-top: 2px solid #0f0f0f; border-bottom: 0;}
-.tbl_head01 thead th {height: auto; padding: 17px 10px; border-bottom: 1px solid #ddd; font-size: 1rem; font-weight: 400; color: #fff; background-color: #333; height: 70px;}
+.tbl_head01 thead th {position: relative; height: auto; padding: 17px 10px; border-bottom: 1px solid #ddd; font-size: 1rem; font-weight: 400; color: #fff; background-color: #333; height: 70px;}
 .tbl_head01 thead th a {color: #fff;}
 .tbl_head01 thead th:first-child {border-radius: 5px 0 0 5px;}
 .tbl_head01 thead th:last-child {border-radius: 0 5px 5px 0;}
+.tbl_head01 thead th:not(:last-child)::after {content: ''; position: absolute; top: 50%; right: 0; transform: translateY(-50%); width: 1px; height: 20px; background-color: #999;}
 .tbl_head01 tbody td {padding: 0 10px; border-top: none; border-bottom: none; font-size: 16px; font-weight: 300; color: #666; line-height: 1.5;;}
 #bo_list .td_board {width:120px;text-align:center}
 #bo_list .td_chk {width:30px;text-align:center;}

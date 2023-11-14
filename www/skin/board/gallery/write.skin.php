@@ -6,7 +6,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
 
-<div id="gallery_write" class="sub gallery">
+<div id="gallery_write" class="sub gallery contents_wrap">
   <?php sub_top($sb_menus, 'resources', 'videos'); ?>
 
   <!-- sub contents { -->

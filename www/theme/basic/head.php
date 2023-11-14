@@ -94,20 +94,66 @@ if(defined('_INDEX_')) { // index에서만 실행
       </div>
       <div class="hd-right hd-in">
         <ul class="gnb-ul">
-          <li class="gnb-li">
+          <li class="gnb-li child">
             <a href="/sub/overview">i-SMR</a>
+            <div class="gnb-dep2">
+              <ul class="gnb-dep2-ul">
+                <li class="gnb-dep2-li">
+                  <a href="/sub/overview">Overview</a>
+                </li>
+                <li class="gnb-dep2-li">
+                  <a href="javascript:alert('Coming soon.');">SMR explorer</a>
+                </li>
+                <li class="gnb-dep2-li">
+                  <a href="/sub/vision">SMR vision</a>
+                </li>
+                <li class="gnb-dep2-li">
+                  <a href="/sub/features">Features</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="gnb-li">
+          <li class="gnb-li child">
             <a href="/sub/partners">About us</a>
+            <div class="gnb-dep2">
+              <ul class="gnb-dep2-ul">
+                <li class="gnb-dep2-li">
+                  <a href="/sub/partners">Partners</a>
+                </li>
+                <li class="gnb-dep2-li">
+                  <a href="/sub/energy">K-energy</a>
+                </li>
+                <li class="gnb-dep2-li">
+                  <a href="/sub/history">History</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="gnb-li">
+          <li class="gnb-li child">
             <a href="/video">Resources</a>
+            <div class="gnb-dep2">
+              <ul class="gnb-dep2-ul">
+                <li class="gnb-dep2-li">
+                  <a href="/video">Videos</a>
+                </li>
+                <li class="gnb-dep2-li">
+                  <a href="javascript:alert('Coming soon.');">Factsheets</a>
+                </li>
+                <li class="gnb-dep2-li">
+                  <a href="javascript:alert('Coming soon.');">Research</a>
+                </li>
+                <li class="gnb-dep2-li">
+                  <a href="/news">News</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="gnb-li">
-            <a href="javascript:alert('Coming soon.')">Contact</a>
+            <a href="javascript:alert('Coming soon.');">Contact</a>
           </li>
-          <li class="gnb-li">
-            <a href="https://ismr.or.kr/eng/" target="_blank" class="gnb-smr"><img src="/source/img/icon-aside_site.png" alt=""><span>SMR Website</span></a>
+          <li class="gnb-li gnb-smr-li">
+            <a href="https://ismr.or.kr/eng/" target="_blank" class="gnb-smr"><img src="/source/img/icon-aside_site.png"
+                alt=""><span>SMR Website</span></a>
           </li>
         </ul>
       </div>
@@ -117,50 +163,95 @@ if(defined('_INDEX_')) { // index에서만 실행
 
 </div>
 
-<!-- Mobile Menu { -->
-<!-- <div id="mobile_menu">
-  <div class="container">
-    <div class="wrapper">
-      <div id="mobile_menu_ct" class="mobile_menu_ct">
-        <div class="hd-util">
-          <a href="javascript:alert('준비중입니다.')" class="hd-util-smr" title="i-SMR 홈페이지 새창으로 열림">
-            <img src="/source/img/home-icon.png" alt="홈 아이콘">
-            i-SMR
-          </a>
-          <div class="hd-util-box">
-            <a href="/" class="hd-util-lang">KOR</a>
-            <a href="javascript:alert('준비중입니다.')" class="hd-util-lang active">ENG</a>
-          </div>
-        </div>
-        
-        <?php foreach ($sb_menus as $menu) { ?>
-        <nav class="mobile_menu-nav">
-          <ul class="mobile_menu-dep1">
-            <li>
-              <a href="javascript:void(0);"><?php echo $menu['name'];?></a>
-              <ul class="mobile_menu-dep2">
-                <?php foreach ($menu['sb_2menus'] as $menu2) { ?>
-                <li>
-                  <a href="<?php echo $menu2['link'];?>"><?php echo $menu2['name'];?></a>
-                  <ul class="mobile_menu-dep3">
-                    <?php foreach ($menu2['sb_3menus'] as $menu3) { ?>
-                    <li>
-                      <a href="<?php echo $menu3['link'];?>"><?php echo $menu3['name'];?></a>
-                    </li>
-                    <?php } ?>
-                  </ul>
+<!-- 사이트맵 시작 { -->
+<div class="sitemap-wr">
+  <div class="contents_wrap">
+    <div class="sitemap">
+      <ul class="sitemap-ul">
+        <li class="sitemap-li">
+          <div class="sitemap-box">
+            <div class="sitemap-link">
+              <div class="sitemap-tit"><a href="/sub/overview">i-SMR</a></div>
+              <ul class="sitemap-link-ul">
+                <li class="sitemap-link-li">
+                  <a href="/sub/overview">Overview</a>
                 </li>
-                <?php } ?>
+                <li class="sitemap-link-li">
+                  <a href="javascript:alert('Coming soon.');">SMR explorer</a>
+                </li>
+                <li class="sitemap-link-li">
+                  <a href="/sub/vision">SMR vision</a>
+                </li>
+                <li class="sitemap-link-li">
+                  <a href="/sub/features">Features</a>
+                </li>
               </ul>
-            </li>
-          </ul>
-        </nav>
-        <?php } ?>
-      </div>
+            </div>
+            <div class="sitemap-img">
+              <img src="/source/img/img-sitemap_box1.png" alt="">
+            </div>
+          </div>
+        </li>
+        <li class="sitemap-li">
+          <div class="sitemap-box">
+            <div class="sitemap-link">
+              <div class="sitemap-tit"><a href="/sub/partners">About us</a></div>
+              <ul class="sitemap-link-ul">
+                <li class="sitemap-link-li">
+                  <a href="/sub/partners">Partners</a>
+                </li>
+                <li class="sitemap-link-li">
+                  <a href="/sub/energy">K-energy</a>
+                </li>
+                <li class="sitemap-link-li">
+                  <a href="/sub/history">History</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-img">
+              <img src="/source/img/img-sitemap_box1.png" alt="">
+            </div>
+          </div>
+        </li>
+        <li class="sitemap-li">
+          <div class="sitemap-box">
+            <div class="sitemap-link">
+              <div class="sitemap-tit"><a href="/video">Resources</a></div>
+              <ul class="sitemap-link-ul">
+                <li class="sitemap-link-li">
+                  <a href="/video">Videos</a>
+                </li>
+                <li class="sitemap-link-li">
+                  <a href="javascript:alert('Coming soon.');">Factsheets</a>
+                </li>
+                <li class="sitemap-link-li">
+                  <a href="javascript:alert('Coming soon.');">Research</a>
+                </li>
+                <li class="sitemap-link-li">
+                  <a href="/news">News</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-img">
+              <img src="/source/img/img-sitemap_box1.png" alt="">
+            </div>
+          </div>
+        </li>
+        <li class="sitemap-li">
+          <div class="sitemap-box">
+            <div class="sitemap-link">
+              <div class="sitemap-tit"><a href="javascript:alert('Coming soon.');">Contact</a></div>
+            </div>
+            <div class="sitemap-img">
+              <img src="/source/img/img-sitemap_box1.png" alt="">
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-</div> -->
-<!-- } Mobilell Menu -->
+</div>
+<!-- } 사이트맵 끝 -->
 
 <!-- 콘텐츠 시작 { -->
 <div id="contents_dom">

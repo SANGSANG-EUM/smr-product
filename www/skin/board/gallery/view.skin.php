@@ -9,7 +9,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
 
-<div id="gallery_view" class="sub gallery">
+<div id="gallery_view" class="sub gallery contents_wrap">
   <?php sub_top($sb_menus, 'resources', 'videos'); ?>
 
   <!-- sub contents { -->

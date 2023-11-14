@@ -9,7 +9,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
     <div class="wrapper">
       <div class="sub-title-wr">
         <div class="sub-title">
-          We introduce <br> <b>various partners with i-SMR.</b>
+          We introduce various partners <b>with i-SMR.</b>
         </div>
       </div>
     </div>
