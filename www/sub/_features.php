@@ -27,6 +27,13 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
         <div class="features-inside-wr">
           <div class="features-inside-img">
             <img src="/source/img/img-features_inside.png" alt="">
+            <ul class="features-img-dots">
+              <li class="features-img-dot">1</li>
+              <li class="features-img-dot">2</li>
+              <li class="features-img-dot">3</li>
+              <li class="features-img-dot">4</li>
+              <li class="features-img-dot">5</li>
+            </ul>
           </div>
           <div class="features-inside features-inside-left">
             <div class="features-inside-txt-wr">
@@ -36,28 +43,28 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
                   transportation available</span></p>
             </div>
             <div class="features-inside-txt-box features-inside-txt-box--1">
-              <p class="features-inside-txt features-inside-txt2">In-vessel CEDM</p>
+              <p class="features-inside-txt features-inside-txt2"><span class="none">1.</span> In-vessel CEDM</p>
               <p class="features-inside-txt features-inside-txt3">Removes the possibility of a control rod ejection
                 accident</p>
             </div>
             <div class="features-inside-txt-box features-inside-txt-box--2">
-              <p class="features-inside-txt features-inside-txt2">Boron-free reactor core</p>
+              <p class="features-inside-txt features-inside-txt2"><span class="none">2.</span> Boron-free reactor core</p>
               <p class="features-inside-txt features-inside-txt3">System simplification and reducing burdens on
                 maintenance</p>
             </div>
           </div>
           <div class="features-inside features-inside-right">
             <div class="features-inside-txt-box features-inside-txt-box--3">
-              <p class="features-inside-txt features-inside-txt2">Integrated reactor</p>
+              <p class="features-inside-txt features-inside-txt2"><span class="none">3.</span> Integrated reactor</p>
               <p class="features-inside-txt features-inside-txt3">Eliminates the possibility of a large break
                 loss-of-coolant accident</p>
             </div>
             <div class="features-inside-txt-box features-inside-txt-box--4">
-              <p class="features-inside-txt features-inside-txt2">Canned motor pump</p>
+              <p class="features-inside-txt features-inside-txt2"><span class="none">4.</span> Canned motor pump</p>
               <p class="features-inside-txt features-inside-txt3">Removes the possibility of a RCP seal LOCA</p>
             </div>
             <div class="features-inside-txt-box features-inside-txt-box--5">
-              <p class="features-inside-txt features-inside-txt2">Helical type steam generator</p>
+              <p class="features-inside-txt features-inside-txt2"><span class="none">5.</span> Helical type steam generator</p>
               <p class="features-inside-txt features-inside-txt3">Integrated steam generator within reactor vessel,
                 reducing space and increasing modular fabrication benefits</p>
             </div>

@@ -29,15 +29,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
               <input type="hidden" name="sop" value="and">
               <label for="sfl" class="sound_only">검색대상</label>
               <div class="bo_sch_wrap">
-                <div class="bo_sch_row">
+                <div class="bo_sch_row period">
                   <div class="bo_sch_tit">Period</div>
                   <div class="bo_sch_ct">
                     <div class="sch_bar">
                       <label for="" class="sound_only">Start<strong class="sound_only"> 필수</strong></label>
-                      <input type="text" name="fr_date" value="<?php echo $fr_date ?>" id="fr_date" class="sch_date" size="11" maxlength="10">
+                      <input type="text" name="fr_date" value="<?php echo $fr_date ?>" id="fr_date" class="sch_date" size="11" maxlength="10" readonly>
                       <span class="sch_bar_txt">~</span>
                       <label for="" class="sound_only">End<strong class="sound_only"> 필수</strong></label>
-                      <input type="text" name="to_date" value="<?php echo $to_date ?>" id="to_date" class="sch_date" size="11" maxlength="10">
+                      <input type="text" name="to_date" value="<?php echo $to_date ?>" id="to_date" class="sch_date" size="11" maxlength="10" readonly>
                     </div>
                     <div class="sch_bar_btn">
                       <button type="button" class="sch_period" onclick="getDate('7')">7 days</button>
@@ -46,7 +46,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     </div>
                   </div>
                 </div>
-                <div class="bo_sch_row">
+                <div class="bo_sch_row keyword">
                   <div class="bo_sch_tit">Keywords</div>
                   <div class="bo_sch_ct">
                     <select name="sfl" id="sfl">
@@ -193,11 +193,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                             <?php } ?>
                             <div class="bo_tit">
                                 <a href="<?php echo $list[$i]['href'] ?>">
-                                    <?php echo $list[$i]['icon_reply'] ?>
+                                    <?php //echo $list[$i]['icon_reply'] ?>
                                     <?php
-                                        if (isset($list[$i]['icon_secret'])) echo rtrim($list[$i]['icon_secret']);
+                                        //if (isset($list[$i]['icon_secret'])) echo rtrim($list[$i]['icon_secret']);
                                     ?>
-                                    <?php echo $list[$i]['subject'] ?>
+                                    <p class="list-tit"><?php echo $list[$i]['subject'] ?></p>
+                                    <p class="list-date"><?php echo date("Y.m.d", strtotime($list[$i]['wr_datetime'])) ?></p>
                                 </a>
                                 <?php
                                 // if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
@@ -233,9 +234,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                     <?php if ($list_href || $write_href) { ?>
                     <ul class="btn_bo_user">
                       <?php if ($is_checkbox) { ?>
-                      <li>
-                        <button type="submit" name="btn_submit" class="bo_btn2" value="선택삭제" onclick="document.pressed=this.value">선택삭제</button>
-                      </li>
+                        <li>
+                          <button type="submit" name="btn_submit" class="bo_btn2" value="선택삭제" onclick="document.pressed=this.value">선택삭제</button>
+                        </li>
+                        <li>
+                          <button type="submit" name="btn_submit" class="bo_btn2" value="선택복사" onclick="document.pressed=this.value">선택복사</button>
+                        </li>
+                        <li>
+                          <button type="submit" name="btn_submit" class="bo_btn2" value="선택이동" onclick="document.pressed=this.value">선택이동</button>
+                        </li>
                       <?php } ?>
                       <?php if ($write_href) { ?>
                       <li>

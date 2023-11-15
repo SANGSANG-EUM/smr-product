@@ -32,7 +32,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
             </div>
             <ul class="vision-goal-ul">
               <li class="vision-goal-li">
-                <div class="vision-goal-circle">Corporate narrative</div>
+                <div class="vision-goal-circle">Corporate <br> narrative</div>
                 <div class="vision-goal-txt-wr">
                   <div class="vision-goal-tit">Your Trusted Partner for Net-Zero Solutions</div>
                   <div class="vision-goal-txt">Possess experience in domestic and international nuclear power plant construction and operation. Provide flexible and effective solutions tailored to your region’s carbon reduction goals by leveraging our technical expertise and background</div>
@@ -42,7 +42,7 @@ include_once(EUM_INCLUDE_PATH.'/sub_top.php');
                 </div>
               </li>
               <li class="vision-goal-li">
-                <div class="vision-goal-circle">i-SMR narrative</div>
+                <div class="vision-goal-circle">i-SMR <br> narrative</div>
                 <div class="vision-goal-txt-wr">
                   <div class="vision-goal-tit">A Present-day Solution for a Sustainable Tomorrow</div>
                   <div class="vision-goal-txt">Effectively and efficiently contribute to carbon reduction Flexible, cost-effective, and safe solution in harmony with renewable energy. Drive a sustainable transition to renewable energy while reducing carbon emissions</div>

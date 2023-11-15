@@ -204,7 +204,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                       </div>
                       <div class="video-pop-cnt">
                         <div class="video-wr">
-                          <iframe src="https://www.youtube.com/embed/<?php echo $list[$i]['wr_1']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe src="https://www.youtube.com/embed/<?php echo $list[$i]['wr_1']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-src="https://www.youtube.com/embed/<?php echo $list[$i]['wr_1']?>"></iframe>
                         </div>
                       </div>
                     </div>
@@ -261,15 +261,24 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <script>
 // 갤러리 팝업
+
+
 $('.gall-pop-btn').on('click', function(){
+  let video = $(this).closest('.gall_box').find('.video-pop-wr iframe').attr("data-src");
+
   $('.video-pop-wr').hide();
   $(this).closest('.gall_box').find('.video-pop-wr').fadeIn();
   $('body, html').addClass('lock');
+  $(this).closest('.gall_box').find('.video-pop-wr iframe').css('display', 'block').attr('src', video);
+
 });
 
 $('.video-close').on('click', function(){
+  let video = $(this).closest('.gall_box').find('.video-pop-wr iframe').attr("src");
+
   $('.video-pop-wr').fadeOut();
   $('body, html').removeClass('lock');
+  $(this).closest('.gall_box').find('.video-pop-wr iframe').attr('src', '');
 });
 
 </script>

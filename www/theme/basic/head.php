@@ -168,7 +168,7 @@ if(defined('_INDEX_')) { // index에서만 실행
   <div class="contents_wrap">
     <div class="sitemap">
       <ul class="sitemap-ul">
-        <li class="sitemap-li">
+        <li class="sitemap-li child">
           <div class="sitemap-box">
             <div class="sitemap-link">
               <div class="sitemap-tit"><a href="/sub/overview">i-SMR</a></div>
@@ -192,7 +192,7 @@ if(defined('_INDEX_')) { // index에서만 실행
             </div>
           </div>
         </li>
-        <li class="sitemap-li">
+        <li class="sitemap-li child">
           <div class="sitemap-box">
             <div class="sitemap-link">
               <div class="sitemap-tit"><a href="/sub/partners">About us</a></div>
@@ -213,7 +213,7 @@ if(defined('_INDEX_')) { // index에서만 실행
             </div>
           </div>
         </li>
-        <li class="sitemap-li">
+        <li class="sitemap-li child">
           <div class="sitemap-box">
             <div class="sitemap-link">
               <div class="sitemap-tit"><a href="/video">Resources</a></div>

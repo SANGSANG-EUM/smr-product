@@ -21,15 +21,35 @@ $(document).ready(function () {
 
   // sitemap
   $('.hd-sitemap-btn').on('click', function () {
-
+    $('.sitemap-link-ul').slideUp();
+    $('.sitemap-li.child .sitemap-tit').removeClass('on');
     if ($(this).hasClass('on')) {
       $('.sitemap-wr').fadeOut().removeClass('on');
       $(this).removeClass('on');
+      $('html, body').removeClass('scrollLock');
     } else {
       $('.sitemap-wr').fadeIn().addClass('on');
       $(this).addClass('on');
+      $('html, body').addClass('scrollLock');
     }
   });
+
+
+  // mobile header 
+  if ($(window).width() < 768) {
+    $('.sitemap-li.child .sitemap-tit > a').attr('href', 'javascript:void(0);');
+    $('.sitemap-li.child .sitemap-tit').on('click', function(){
+      if ($(this).hasClass('on')) {
+        $('.sitemap-link-ul').slideUp().removeClass('on');
+        $(this).removeClass('on');
+      } else {
+        $('.sitemap-link-ul').slideUp();
+        $('.sitemap-li.child .sitemap-tit').removeClass('on')
+        $(this).siblings('.sitemap-link-ul').slideDown().addClass('on');
+        $(this).addClass('on');
+      }
+    });
+  }
 
 
   // footer top button
@@ -45,6 +65,13 @@ $(document).ready(function () {
     $('.sub-location-wr').stop().slideToggle(200);
   });
 
+  $(document).on('mouseup focusout', function (e) {
+      if ($(".sub-top-tbtn").has(e.target).length === 0) {
+        $('.sub-location-wr').stop().fadeOut();
+      }
+    });
+
+
   // plugin - Fullpage : 메인 풀페이지
   $('#main').fullpage({
     scrollingSpeed: 1000,
@@ -54,8 +81,8 @@ $(document).ready(function () {
     anchors: ['visual', 'about', 'resources', 'links', 'footer'],
     // sectionsColor: ['#f2f2f2', '#1BBC9B', '#7E8F7C', '#C63D0F'],
     verticalCentered: false,
-    navigation: true,
-    navigationPosition: 'right',
+    // navigation: true,
+    // navigationPosition: 'right',
     // navigationTooltips: ['Eureka Mediatech', 'About Us', 'What we do', 'Our Work'],
     responsiveWidth: 768,
     onLeave: function (index, nextIndex, direction) {
@@ -105,15 +132,6 @@ $(document).ready(function () {
       }
     }
   });
-
-  //footer overlab up
-  // $('.mainsec4').on("mousewheel", function (e) {
-  //   if ($('.mainsec4').hasClass('active')) {
-  //     if (e.originalEvent.wheelDelta < 0) {
-  //       $(".main-foot").addClass("on");
-  //     }
-  //   }
-  // });
 
 
   // 메인 섹션 2 : 스와이퍼 슬라이드
@@ -239,8 +257,8 @@ $(document).ready(function () {
 
     return new Swiper(selector, {
       draggable: true,
-      slidesPerView: 3,
-      spaceBetween: 45,
+      slidesPerView: 1,
+      spaceBetween: 20,
       // centeredSlides: true,
       loop: true,
       loopedSlides: 10,
@@ -259,6 +277,16 @@ $(document).ready(function () {
       pagination: {
         el: `${id} .mainsec3-sl-dot-wr`,
         clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 30,
+        },
+        1290: {
+          slidesPerView: 3,  //브라우저가 1024보다 클 때
+          spaceBetween: 45,
+        },
       },
     });
   }

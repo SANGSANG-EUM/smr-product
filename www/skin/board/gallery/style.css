@@ -127,8 +127,8 @@ box-shadow:2px 2px 3px 0px rgba(0,0,0,0.2)}
 #bo_gall li.empty_list {padding: 50px 0 !important; text-align:center; font-size: 16px; font-weight: 300; color: #666; line-height: 1.5;}
 
 .bo_top_info{margin-bottom: 15px; font-size: 0;}
-.bo_top_info:after {display:block;visibility:hidden;clear:both;content:""}
-#bo_list_total {display: inline-block; vertical-align: bottom; width: calc(100% - 500px); float:none; line-height:1.5; font-size:18px; font-weight: 500; color:#333}
+/* .bo_top_info:after {display:block;visibility:hidden;clear:both;content:""} */
+#bo_list_total {display: inline-block; vertical-align: bottom; width: calc(100% - 500px); float:none; line-height:1.5; font-size:1.125rem; font-weight: 500; color:#333}
 #bo_list_total span {font-weight: 600; color: #009AF1;}
 .bo_sch_wrap{display: inline-block; vertical-align: bottom; float: none; width: 500px; max-width: 100%;}
 .bo_sch {}
@@ -138,10 +138,10 @@ box-shadow:2px 2px 3px 0px rgba(0,0,0,0.2)}
 .bo_sch form {display:block}
 .bo_sch_ct{font-size: 0; text-align: right; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;}
 .bo_sch_ct:after{display:block;visibility:hidden;clear:both;content:""}
-.bo_sch select {display:inline-block; border:0; width: 160px; height:48px; padding: 0 20px;  font-size: 16px; font-weight: 400; color: #333; vertical-align: middle; text-align: left; background: url('/source/img/icon-arrow_select.png') no-repeat center right 20px;}
+.bo_sch select {display:inline-block; border:0; width: 160px; height:48px; padding: 0 20px;  font-size: 1rem; font-weight: 400; color: #333; vertical-align: middle; text-align: left; background: url('/source/img/icon-arrow_select.png') no-repeat center right 20px;}
 .bo_sch .sch_bar {position: relative; display:inline-block; width: calc(100% - 160px); font-size: 16px; font-weight: 400; color: #999; vertical-align: middle; text-align: left;}
 .bo_sch .sch_bar:after{content:""; position: absolute; left: 0; top: 50%; width: 1px; height: 20px; margin-top: -10px; background: #ddd;}
-.bo_sch .sch_input {float:left; width: calc(100% - 50px);height:48px; padding:0 20px; border:0; border-right:0; background-color:transparent;}
+.bo_sch .sch_input {float:left; width: calc(100% - 50px);height:48px; padding:0 20px; border:0; border-right:0; background-color:transparent; font-size: 1rem;}
 .bo_sch .sch_input::placeholder {color: #999;}
 .bo_sch .sch_btn {float:right; width:50px; height:48px; border:0; color:#656565;background:none; font-size:0; background: url('/source/img/icon-search.png') no-repeat center center;}
 .bo_sch .bo_sch_cls {position:absolute;right:0;top:0;color:#b5b8bb;border:0;padding:12px 15px;font-size:16px;background:#fff}
@@ -392,13 +392,13 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 /* popup */
 .video-pop-wr {display: none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 1000;}
 .video-dim {position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0, 0, 0, .7);}
-.video-pop {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px; overflow: hidden;}
+.video-pop {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px; overflow: hidden; overflow-y: auto;  max-height: 95vh;}
 .video-pop-top {display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 30px; background-color: #fafafa;}
-.video-pop-tit{font-size: 1.25rem; font-weight: 500; color: #0f0f0f;}
+.video-pop-tit{font-size: 1.25rem; font-weight: 500; color: #0f0f0f; word-break: break-all;}
 .video-pop-cnt {padding: 50px; background-color: #fff;}
-.video-wr {position: relative; width: min(90vw, 1000px); height: auto; padding-bottom: 56.25%; border-radius: 10px; overflow: hidden;}
+.video-wr {position: relative; width: min(calc(95vw - 100px), 1000px); height: auto; padding-bottom: 56.25%; border-radius: 10px; overflow: hidden;}
 .video-wr > iframe {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: cover;}
-.video-close {position: relative; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #333; background: none; rotate: 45deg; transition: .5s;}
+.video-close {flex-shrink: 0; position: relative; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #333; background: none; rotate: 45deg; transition: .5s;}
 .video-close::after, .video-close::before {content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #333;}
 .video-close::after {width: 16px; height: 2px;}
 .video-close::before {height: 16px; width: 2px;}
@@ -459,6 +459,19 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
   #bo_vc header .bo_vc_winfo .bo_vc_time{font-size: 12px;}
   #bo_vc .cmt_contents{font-size: 14px;}
   .bo_vc_act li a{font-size: 12px; height: 25px; line-height: 25px; padding: 0 10px;}
+
+  /* search */
+  .bo_top_info {display: flex; flex-direction: column-reverse; gap: 15px; margin-bottom: 5px;}
+  .bo_sch_wrap {width: 100%;}
+  .bo_sch select, .bo_sch .sch_input {padding: 0 10px;}
+  .bo_sch select {width: 120px; background-position: center right 10px;}
+  .bo_sch .sch_bar {width: calc(100% - 120px);}
+  #bo_list_total {width: 100%;}
+
+  /* pop */
+  .video-pop-top {padding: 15px 20px;}
+  .video-pop-cnt {padding: 25px;}
+  .video-wr {width: calc(98vw - 50px);}
 } /*@media End*/
 
 @media screen and (max-width:640px){
@@ -467,4 +480,26 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 
 @media screen and (max-width:480px){
   #bo_gall .gall_li{display: block !important; width: 100% !important;}
+
+  /* search */
+  .bo_sch select {width: 100px;}
+  .bo_sch .sch_bar {width: calc(100% - 100px);}
+
+  /* gall */
+  #bo_gall .gall_info {margin-top: 5px; padding-left: 0;}
+  #bo_gall .gall_text_href {padding: 10px 0 0;}
+  #bo_gall .gall_li {padding: 20px 0;}
+  #bo_gall #gall_ul {padding: 5px 0;}
+
+  /* paging */
+  .pg_wrap {margin-top: 15px;}
+  .pg_end, .pg_start {width: 30px; background-size: 30%;}
+  .pg_page, .pg_current {height: 30px; line-height: 30px; font-size: 1.125rem;}
+
+  /* pop */
+  .video-pop-top {padding: 10px;}
+  .video-pop-cnt {padding: 10px;}
+  .video-wr {width: calc(98vw - 20px);}
+  .video-close {width: 30px; height: 30px;}
+  .video-pop-tit {font-size: 1.125rem;}
 } /*@media End*/
