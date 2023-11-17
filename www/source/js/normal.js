@@ -21,7 +21,7 @@ $(document).ready(function () {
 
   // sitemap
   $('.hd-sitemap-btn').on('click', function () {
-    $('.sitemap-link-ul').slideUp();
+    // $('.sitemap-link-ul').slideUp();
     $('.sitemap-li.child .sitemap-tit').removeClass('on');
     if ($(this).hasClass('on')) {
       $('.sitemap-wr').fadeOut().removeClass('on');
@@ -60,16 +60,20 @@ $(document).ready(function () {
   })
 
 
-  // sub location button
-  $('.sub-top-tbtn').on('click', function () {
-    $('.sub-location-wr').stop().slideToggle(200);
-  });
-
-  $(document).on('mouseup focusout', function (e) {
+  // sub location mobile button
+  if($(window).width() < 481) {
+    $('.sub-top-tbtn').on('click', function () {
+      $('.sub-location-wr').stop().slideToggle(200);
+    });
+  
+    $(document).on('mouseup focusout', function (e) {
       if ($(".sub-top-tbtn").has(e.target).length === 0) {
         $('.sub-location-wr').stop().fadeOut();
       }
     });
+  }
+
+
 
 
   // plugin - Fullpage : 메인 풀페이지

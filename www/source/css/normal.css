@@ -50,18 +50,20 @@
 .sitemap-box {display: flex; flex-direction: column; justify-content: space-between; position: relative; z-index: 10; padding-top: 25vh; height: 100%; transition: .5s;}
 .sitemap-tit {overflow: hidden;}
 .sitemap-tit a {position: relative; top: 45px; font-size: clamp(1.5rem, 3.5vw, 2.75rem); font-weight: 700; transition: top 1s; opacity: 0;}
-.sitemap-link-ul {position: relative; padding-top: 30px; margin-top: 30px;}
-.sitemap-link-ul::after {content: ''; position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 10px; height: 10px; border-radius: 50%; border: 2px solid #999; transition: .3s;}
+.sitemap-link-ul {display: block; position: relative; padding-top: 30px; margin-top: 30px;}
+.sitemap-link-ul::after {content: ''; position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); width: 10px; height: 10px; border-radius: 50%; border: 2px solid #999; transition-duration: .3s; transition-delay: .5s; opacity: 0;}
 .sitemap-link-li {padding: 10px 0; overflow: hidden;} 
 .sitemap-link-li > a {position: relative; top: 100px; font-size: 1.125rem; font-weight: 400; transition: 1.2s; opacity: 0;}
 .sitemap-link-li > a::after {content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background-color: #fff; transition: .3s;}
-.sitemap-img {margin-top: clamp(20px, 5vw, 80px); opacity: 0; transition: .3s;}
+.sitemap-img {margin-top: clamp(10px, 5vh, 80px); opacity: 0; transition: .3s;}
+.sitemap-img img {max-height: 30vh;}
 
 .sitemap-wr.on {}
 .sitemap-wr.on a, .sitemap-wr.on .sitemap-link-li > a {top: 0; opacity: 1;}
 .hd-sitemap-btn.on {rotate: 45deg;}
 .hd-sitemap-btn.on::after, .hd-sitemap-btn.on::before {top: 50%;}
 .hd-sitemap-btn.on::before {width: 2px; height: 16px;}
+.sitemap-wr.on .sitemap-link-ul::after {opacity: 1;}
 
 
 

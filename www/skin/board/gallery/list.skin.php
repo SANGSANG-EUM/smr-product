@@ -191,6 +191,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                           <?php echo date("Y.m.d", strtotime($list[$i]['wr_datetime'])) ?>
                         </span>
                       </div>
+                      <a href="<?php echo $list[$i]['href'] ?>" style="display: inline-block; margin-top:10px; background-color: #333; padding: 5px 15px; color: #fff; border-radius: 5px;">수정</a>
                     </div>
                   </div>
 

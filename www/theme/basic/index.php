@@ -36,7 +36,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 neutrality with eco-friendly energy.</p>
             </div>
             <div class="mainsec1-btn-wr">
-              <a href="" class="mainsec1-btn">
+              <a href="/video" class="mainsec1-btn">
                 <div class="mainsec1-btn-img"><img src="/source/img/icon-playbtn.png" alt=""></div>
                 <div class="mainsec1-btn-txt">SMR Video</div>
               </a>
@@ -327,7 +327,8 @@ include_once(G5_THEME_PATH.'/head.php');
                 <h2 class="main-tit">SMR Resources</h2>
                 <p class="main-subtit">Check out the various news from i-SMR, which provides eco-friendly energy with safe technology.</p>
               </div>
-                <ul class="category-ul category-ul--main3">
+              <!-- research 페이지 오픈 후 주석 해제 -->
+              <!-- <ul class="category-ul category-ul--main3">
                   <li rel="all" class="category-li active">
                     <button type="button" class="category-btn">ALL</button>
                   </li>
@@ -337,159 +338,39 @@ include_once(G5_THEME_PATH.'/head.php');
                   <li rel="research" class="category-li">
                     <button type="button" class="category-btn">Research</button>
                   </li>
-              </ul>
+              </ul> -->
             </div>  
             <div class="mainsec3-sl-container">
               <div id="all" class="mainsec3-sl-box active">
-                <div class="mainsec3-slider swiper swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">News</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">ddd</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""</span></p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">Research</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""</span></p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">Research</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""></span></p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">News</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""</span></p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="mainsec3-sl-dot-wr mainsec-sl-dot-wr"></div>
-                </div>
-                <div class="mainsec3-sl-arrow-wr mainsec-sl-arrow-wr">
-                  <button type="button" class="mainsec-sl-arrow mainsec3-sl-arrow prev"></button>
-                  <button type="button" class="mainsec-sl-arrow mainsec3-sl-arrow next"></button>
-                </div>
+                <?php echo latest_all("basic", "news,research", 5, 40);?>
               </div>
               <div id="news" class="mainsec3-sl-box">
                 <div class="mainsec3-slider swiper swiper-container">
                   <div class="swiper-wrapper">
+                  <?php 
+                    $tg_bo_table = 'news';
+                    $tg_bo_orderby = ' ORDER BY wr_datetime desc '; //게시글 순서(작성일 최신순)
+                    $tg_bo_limit = ' LIMIT 5 '; //게시글 개수 제한(9개)
+
+                    $tg_bo_sql = " SELECT * FROM iu_write_{$tg_bo_table} WHERE wr_id<>'' {$tg_bo_orderby} {$tg_bo_limit} ";
+                    $tg_bo_res = sql_query($tg_bo_sql);
+                    for($i=0; $tg_bo=sql_fetch_array($tg_bo_res); $i++){
+                    ?>
                     <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
+                      <a href="<?php echo '/'.$tg_bo_table.'/'.$tg_bo['wr_id'].'' ?>" class="mainsec3-sl-in">
                         <div class="mainsec3-sl-cate">News</div>
                         <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">ddd</p>
+                          <p class="mainsec3-sl-tit"><?php echo $tg_bo['wr_subject']?></p>
+                          <p class="mainsec3-sl-txt"><?php echo strip_tags($tg_bo['wr_content']);?></p>
                         </div>
                         <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""</span></p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">News</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""</span></p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">News</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
+                          <p class="mainsec3-sl-date"><?php echo date("Y.m.d", strtotime($tg_bo['wr_datetime'])) ?></p>
                           <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
                               class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""></span></p>
                         </div>
                       </a>
                     </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">News</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""</span></p>
-                        </div>
-                      </a>
-                    </div>
+                  <?php } ?>
                   </div>
                   <div class="mainsec3-sl-dot-wr mainsec-sl-dot-wr"></div>
                 </div>
@@ -501,74 +382,29 @@ include_once(G5_THEME_PATH.'/head.php');
               <div id="research" class="mainsec3-sl-box">
                 <div class="mainsec3-slider swiper swiper-container">
                   <div class="swiper-wrapper">
+                  <?php 
+                    $tg_bo_table = 'research';
+                    $tg_bo_orderby = ' ORDER BY wr_datetime desc '; //게시글 순서(작성일 최신순)
+                    $tg_bo_limit = ' LIMIT 5 '; //게시글 개수 제한(9개)
+
+                    $tg_bo_sql = " SELECT * FROM iu_write_{$tg_bo_table} WHERE wr_id<>'' {$tg_bo_orderby} {$tg_bo_limit} ";
+                    $tg_bo_res = sql_query($tg_bo_sql);
+                    for($i=0; $tg_bo=sql_fetch_array($tg_bo_res); $i++){
+                    ?>
                     <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">research</div>
+                      <a href="<?php echo '/'.$tg_bo_table.'/'.$tg_bo['wr_id'].'' ?>" class="mainsec3-sl-in">
+                        <div class="mainsec3-sl-cate">Research</div>
                         <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">ddd</p>
+                          <p class="mainsec3-sl-tit"><?php echo $tg_bo['wr_subject']?></p>
+                          <p class="mainsec3-sl-txt"><?php echo strip_tags($tg_bo['wr_content']);?></p>
                         </div>
                         <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""</span></p>
+                          <p class="mainsec3-sl-date"><?php echo date("Y.m.d", strtotime($tg_bo['wr_datetime'])) ?></p>
+                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""></span></p>
                         </div>
                       </a>
                     </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">research</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""</span></p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">research</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""></span></p>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="mainsec3-sl swiper-slide">
-                      <a href="" class="mainsec3-sl-in">
-                        <div class="mainsec3-sl-cate">research</div>
-                        <div class="mainsec3-sl-txtwr">
-                          <p class="mainsec3-sl-tit">Bulletin title area. Bulletin title area. Bulletin title area.</p>
-                          <p class="mainsec3-sl-txt">Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area. Bulletin content area. Bulletin content area. Bulletin content
-                            area. Bulletin content area.</p>
-                        </div>
-                        <div class="mainsec3-sl-btm">
-                          <p class="mainsec3-sl-date">2023.10.12</p>
-                          <p class="mainsec3-sl-more mainsec-more"><span class="mainsec3-sl-more__txt  mainsec-more__txt">Learn more</span><span
-                              class="mainsec3-sl-more__icon  mainsec-more__icon"><img src="/source/img/icon-arrow_more.png" alt=""></span></p>
-                        </div>
-                      </a>
-                    </div>
+                  <?php } ?>
                   </div>
                   <div class="mainsec3-sl-dot-wr mainsec-sl-dot-wr"></div>
                 </div>
@@ -590,7 +426,7 @@ include_once(G5_THEME_PATH.'/head.php');
             <div class="mainsec4-subject">Leading the <b>future energy business</b> and contributing to <b>carbon neutrality with eco-friendly energy.</b></div>
             <ul class="mainsec4-ul">
               <li class="mainsec4-li">
-                <a href="" class="mainsec4-link">
+                <a href="javascript:alert('Coming soon.');" class="mainsec4-link">
                   <div class="mainsec4-txtwr">
                     <p class="mainsec4-tit">Information</p>
                     <p class="mainsec4-txt">Do you want to check a lot of information on i-SMR?  Check out the brochure for i-SMR.</p>
@@ -604,7 +440,7 @@ include_once(G5_THEME_PATH.'/head.php');
                 </a>
               </li>
               <li class="mainsec4-li">
-                <a href="" class="mainsec4-link">
+                <a href="javascript:alert('Coming soon.');" class="mainsec4-link">
                   <div class="mainsec4-txtwr">
                     <p class="mainsec4-tit">Social Media</p>
                     <p class="mainsec4-txt">Want to check out the various stories of i-SMR? Check out the energy and experience of i-SMR in the video.</p>

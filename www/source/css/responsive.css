@@ -1,4 +1,7 @@
 @media screen and (max-width:1630px){
+  /* sitemap */
+  .sitemap-li::after {width: calc(100% - 40px); height: calc(100% - 40px);}
+
   /* sub common */
   .sub-title {font-size: 2rem;}
 
@@ -40,10 +43,19 @@
   .energy-dia-li:nth-child(even) .energy-dia-year {left: 0; transform: translateY(50%);}
 }
 
+@media screen and (max-width:1440px){
+  /* sitemap */
+  .sitemap-img img {max-height: 20vh;}
+}
+
 @media screen and (max-width:1290px){
   /* header */
   .hd-left {gap: 3vw;}
   .gnb-ul {padding-right: 3vw;}
+
+  /* sitemap */
+  .sitemap-box {padding-top: 20vh;}
+  .sitemap-img {display: none;}
 
   /* footer */
   .foot-btm {flex-direction: column; align-items: flex-start;}
@@ -184,8 +196,8 @@
   .hd-sitemap-btnwr {width: auto; height: 100%;}
   .sitemap {padding-top: 75px; padding-bottom: clamp(45px, 18vw, 90px);}
   .sitemap-link-ul {display: none; margin-top: 20px; padding-top: 10px;}
-  .sitemap-link-ul::after {opacity: 0; transition-delay: 0.4s; transition-duration: .3s;}
-  .sitemap-link-ul.on::after {opacity: 1;}
+  .sitemap-link-ul::after {opacity: 0 !important; transition-delay: 0.4s; transition-duration: .3s;}
+  .sitemap-link-ul.on::after {opacity: 1 !important;}
   .sitemap-ul {padding: 15vh 0;}
 
   /* footer */
@@ -217,7 +229,7 @@
   /* sub common */
   .sub-title {font-size: 1.35rem;}
 
-  /* i-SMR > overview*/
+  /* i-SMR > overview */
   .overview-li__tit {font-size: 1.6rem;}
 
   /* i-SMR > vision */
